@@ -1,0 +1,1061 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.15f1 (b58023a2b463) revision 11894819'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'es' Physical Memory: 15791 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.15f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Users/IGG/Documents/GitHub/AppIntegracion/ProyectoClase_IGG
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+53520
+Successfully changed project path to: C:/Users/IGG/Documents/GitHub/AppIntegracion/ProyectoClase_IGG
+C:/Users/IGG/Documents/GitHub/AppIntegracion/ProyectoClase_IGG
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [52928] Host "[IP] 25.0.87.80 [Port] 0 [Flags] 2 [Guid] 1142621139 [EditorId] 1142621139 [Version] 1048832 [Id] WindowsEditor(7,IGG-P) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [52928] Host "[IP] 25.0.87.80 [Port] 0 [Flags] 2 [Guid] 1142621139 [EditorId] 1142621139 [Version] 1048832 [Id] WindowsEditor(7,IGG-P) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
+Refreshing native plugins compatible for Editor in 9.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.15f1 (b58023a2b463)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.15f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/IGG/Documents/GitHub/AppIntegracion/ProyectoClase_IGG/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Ti Laptop GPU (ID=0x25a0)
+    Vendor:   NVIDIA
+    VRAM:     3976 MB
+    Driver:   31.0.15.3640
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.15f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.15f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56476
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.15f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.014350 seconds.
+- Loaded All Assemblies, in  0.460 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.343 seconds
+Domain Reload Profiling: 801ms
+	BeginReloadAssembly (142ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (81ms)
+	LoadAllAssembliesAndSetupDomain (182ms)
+		LoadAssemblies (138ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (179ms)
+			TypeCache.Refresh (177ms)
+				TypeCache.ScanAssembly (158ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (344ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (275ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (193ms)
+			ProcessInitializeOnLoadMethodAttributes (58ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.792 seconds
+Refreshing native plugins compatible for Editor in 4.36 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.843 seconds
+Domain Reload Profiling: 1630ms
+	BeginReloadAssembly (182ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (54ms)
+	LoadAllAssembliesAndSetupDomain (495ms)
+		LoadAssemblies (389ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (212ms)
+			TypeCache.Refresh (188ms)
+				TypeCache.ScanAssembly (172ms)
+			ScanForSourceGeneratedMonoScriptInfo (17ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (844ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (647ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (85ms)
+			ProcessInitializeOnLoadAttributes (498ms)
+			ProcessInitializeOnLoadMethodAttributes (34ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 5.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3410 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 57 unused Assets / (1.4 MB). Loaded Objects now: 3878.
+Memory consumption went from 230.8 MB to 229.4 MB.
+Total: 3.940400 ms (FindLiveObjects: 0.337000 ms CreateObjectMapping: 0.128300 ms MarkObjects: 2.995400 ms  DeleteObjects: 0.478000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1624157.018069 seconds.
+  path: Assets/Assets Importados/Leohpaz/RPG_Essentials_Free/10_Battle_SFX/22_Slash_04.wav
+  artifactKey: Guid(88b1cbe3caa3fee4b8b103b5edd7aba9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/Leohpaz/RPG_Essentials_Free/10_Battle_SFX/22_Slash_04.wav using Guid(88b1cbe3caa3fee4b8b103b5edd7aba9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce1efce9110eef31128a50b84b44c180') in 0.132284 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Assets Importados/UnityTechnologies/ParticlePack/Shared/Environment/Models/CornerWall.fbx
+  artifactKey: Guid(29175e748bfc77b4194c165e0258b930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/UnityTechnologies/ParticlePack/Shared/Environment/Models/CornerWall.fbx using Guid(29175e748bfc77b4194c165e0258b930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e1a2a60983b1be20dbdebc3c3147921') in 0.370206 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Isometric/monorail_trainPassenger_NW.png
+  artifactKey: Guid(6cc77571aa9ed1f43bc0fb642d09c0a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Isometric/monorail_trainPassenger_NW.png using Guid(6cc77571aa9ed1f43bc0fb642d09c0a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '085c605a303f542fac9bec281fbb7caa') in 0.040046 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Isometric/astronautA_N.png
+  artifactKey: Guid(348db5d89edf9a84d8b77aa18878b59b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Isometric/astronautA_N.png using Guid(348db5d89edf9a84d8b77aa18878b59b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '907b7ac844a63a11b4483d5ad90eebc6') in 0.027191 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Isometric/astronautB_NW.png
+  artifactKey: Guid(89074fb1296fc484ca1f30db2298b65a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Isometric/astronautB_NW.png using Guid(89074fb1296fc484ca1f30db2298b65a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90c018609a02844ee6a371a2e08f7e9f') in 0.032262 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Models/DAE format/monorail_trainPassenger.dae
+  artifactKey: Guid(a163ea40bee7f0048a162fb84b71ab35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Models/DAE format/monorail_trainPassenger.dae using Guid(a163ea40bee7f0048a162fb84b71ab35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e5fcf8479a17c1cc98c03d3297d2a94') in 0.079132 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Models/FBX format/hangar_roundGlass.fbx
+  artifactKey: Guid(a0ec15595b2af4546a3ab3511d60e058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Models/FBX format/hangar_roundGlass.fbx using Guid(a0ec15595b2af4546a3ab3511d60e058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8311449d446dc063a173759c4ec6dfa6') in 0.050218 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Isometric/hangar_roundGlass_SE.png
+  artifactKey: Guid(7bc5a6d434aa1c04b83d0e8c10d50a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Isometric/hangar_roundGlass_SE.png using Guid(7bc5a6d434aa1c04b83d0e8c10d50a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '889d5e1391026038a30344b16b7ff2cc') in 0.030701 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/ProyectoIGG/Sounds/EngineEfects/plasma-cutting-torch-74975.mp3
+  artifactKey: Guid(c717350260715ba4d9e024414fd013d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProyectoIGG/Sounds/EngineEfects/plasma-cutting-torch-74975.mp3 using Guid(c717350260715ba4d9e024414fd013d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f9dc10a76dc81634f7d9d68938edad3') in 0.018623 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Isometric/astronautA_W.png
+  artifactKey: Guid(351ab2f0b986b3a4497fc509a178e7fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Isometric/astronautA_W.png using Guid(351ab2f0b986b3a4497fc509a178e7fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '997b644257eb365a9e4b7d5310f4aca7') in 0.031006 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Models/DAE format/hangar_roundGlass.dae
+  artifactKey: Guid(dc9b89f68b962414aa21fa3a62803a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Models/DAE format/hangar_roundGlass.dae using Guid(dc9b89f68b962414aa21fa3a62803a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11645f3ededbaeeb559e839d8cd8ec23') in 0.055981 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ProyectoIGG/MyAssets/Asteroide.prefab
+  artifactKey: Guid(1c5c71ee87742d24e873c10e1813de3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProyectoIGG/MyAssets/Asteroide.prefab using Guid(1c5c71ee87742d24e873c10e1813de3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69f60e02c5eb0876cc632b06759e31ba') in 0.004151 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Isometric/astronautA_S.png
+  artifactKey: Guid(06c833278048857498210f0f92fa055b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Isometric/astronautA_S.png using Guid(06c833278048857498210f0f92fa055b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85f0e4e9aaecfaab65633327a8825589') in 0.037176 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Side/astronautB.png
+  artifactKey: Guid(76d809c79c6890d4fb0d88d91942f396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Side/astronautB.png using Guid(76d809c79c6890d4fb0d88d91942f396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fe9369780ead95917c1af4a72b4df79') in 0.026351 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Assets Importados/UnityTechnologies/ParticlePack/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/UnityTechnologies/ParticlePack/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa3d54c334a4b51bbaed868320717e8a') in 0.055561 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Isometric/hangar_roundGlass_SW.png
+  artifactKey: Guid(1eda1c8b8bc5f0c41b1da753e33d61f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Isometric/hangar_roundGlass_SW.png using Guid(1eda1c8b8bc5f0c41b1da753e33d61f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecb62c917eb4b9e9384c08f500112bd3') in 0.028540 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Models/DAE format/astronautB.dae
+  artifactKey: Guid(0f9b00c500a71104fb1e827ea271ba1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Models/DAE format/astronautB.dae using Guid(0f9b00c500a71104fb1e827ea271ba1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f8e3f3cacf987b4e0e5981227efbc15') in 0.139403 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 39
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Assets Importados/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Models/DropSplash.fbx
+  artifactKey: Guid(e6c27adf3e47c024da4e786f5898c785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Models/DropSplash.fbx using Guid(e6c27adf3e47c024da4e786f5898c785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bde38b4eda5450893da667ac091089a') in 0.151717 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Assets Importados/UnityTechnologies/ParticlePack/Shared/Environment/Models/SideWall.fbx
+  artifactKey: Guid(b03a156a678c5aa42b3abd35f650bb53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/UnityTechnologies/ParticlePack/Shared/Environment/Models/SideWall.fbx using Guid(b03a156a678c5aa42b3abd35f650bb53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cde0c5e21f8958422eb5162eb4cec56b') in 0.047987 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Side/hangar_roundGlass.png
+  artifactKey: Guid(49ecff594507f2b49be9af28ea4b315d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Side/hangar_roundGlass.png using Guid(49ecff594507f2b49be9af28ea4b315d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '464964bb8e9e0b404aa3603029795a6e') in 0.034623 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Isometric/astronautB_NE.png
+  artifactKey: Guid(a3edbf0b97931ff48b1a7f20db4cd139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Isometric/astronautB_NE.png using Guid(a3edbf0b97931ff48b1a7f20db4cd139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11d8cba2a4b55f5f3679d7e957664ac6') in 0.029279 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Isometric/astronautB_SW.png
+  artifactKey: Guid(94c8b8d054689774fb964262e8a49db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Isometric/astronautB_SW.png using Guid(94c8b8d054689774fb964262e8a49db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f15412f491dfd09744db6708c3650d4') in 0.032606 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Assets Importados/UnityTechnologies/ParticlePack/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/UnityTechnologies/ParticlePack/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '715a7d16625d9c6e83f1bc31594b77a2') in 0.046573 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Isometric/astronautA_SE.png
+  artifactKey: Guid(bd1d0eba31e4baf4dbadf8a38204934d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Isometric/astronautA_SE.png using Guid(bd1d0eba31e4baf4dbadf8a38204934d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19f884cb48d6a6588b937220b1a289d8') in 0.034661 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Models/FBX format/astronautA.fbx
+  artifactKey: Guid(047cd870b8c56094b871ae596302d3ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Models/FBX format/astronautA.fbx using Guid(047cd870b8c56094b871ae596302d3ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9a3a421063788225bfab1e517ebab43') in 0.115714 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 41
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Assets Importados/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/PlasmaFire.mat
+  artifactKey: Guid(b5387d3c2ba98fc44a0f5744f94ce48c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/PlasmaFire.mat using Guid(b5387d3c2ba98fc44a0f5744f94ce48c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e21f9af29b8c34479302ed7e9e82686a') in 0.049093 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Side/monorail_trainPassenger.png
+  artifactKey: Guid(f0fa6c4f897306e44a94d53c03dbff4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Side/monorail_trainPassenger.png using Guid(f0fa6c4f897306e44a94d53c03dbff4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acdf92000a22db88cd11112976fdccb6') in 0.030339 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Assets Importados/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/MuzzleFlash01.mat
+  artifactKey: Guid(a8cb413d77ceb054abf10c2c6ee66337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/MuzzleFlash01.mat using Guid(a8cb413d77ceb054abf10c2c6ee66337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac0154541db56e4bea5bcdfae80b4ad4') in 0.070855 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Models/FBX format/monorail_trainPassenger.fbx
+  artifactKey: Guid(1c2b90422dcc5a74fbcc979eb0f1b0a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Models/FBX format/monorail_trainPassenger.fbx using Guid(1c2b90422dcc5a74fbcc979eb0f1b0a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd4708cba3a20205bae1e8106938d540') in 0.046636 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Isometric/astronautB_N.png
+  artifactKey: Guid(e90fa424d6a67e14ba43814958904bf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Isometric/astronautB_N.png using Guid(e90fa424d6a67e14ba43814958904bf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33d62b8f09031fc5810bca9d7ba6e838') in 0.032598 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Side/astronautA.png
+  artifactKey: Guid(ab4e9dbf41cdd26468d243bd435c4115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Side/astronautA.png using Guid(ab4e9dbf41cdd26468d243bd435c4115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '632f3df403e188156a0857e9d939befd') in 0.027868 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Assets Importados/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/PlasmaExplosionEffect.prefab
+  artifactKey: Guid(96730f8640590934eacb6f860058e7f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/PlasmaExplosionEffect.prefab using Guid(96730f8640590934eacb6f860058e7f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff0374a303e0d7bd292247013a1d7b2b') in 0.328516 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 31
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Assets Importados/UnityTechnologies/ParticlePack/Shared/Environment/Models/EndWall.fbx
+  artifactKey: Guid(18f35b9d268a5e2418ed0f7628c2d86d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/UnityTechnologies/ParticlePack/Shared/Environment/Models/EndWall.fbx using Guid(18f35b9d268a5e2418ed0f7628c2d86d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aabb005e739c5e4b3b01315553f954e2') in 0.045531 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Isometric/astronautB_S.png
+  artifactKey: Guid(e4d0e5e423a3b5545a19d6043fb76236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Isometric/astronautB_S.png using Guid(e4d0e5e423a3b5545a19d6043fb76236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71949fcfea5bf1b835026973ccadc777') in 0.039922 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Isometric/astronautB_W.png
+  artifactKey: Guid(57b185f85a150b74dbfe55fb36167d45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Isometric/astronautB_W.png using Guid(57b185f85a150b74dbfe55fb36167d45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92c94a3d678c0c93ad82af95d474e232') in 0.045327 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Assets Importados/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Prefabs/BigSplash.prefab
+  artifactKey: Guid(c1c88308ebb5d2541a282905b854ee4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Prefabs/BigSplash.prefab using Guid(c1c88308ebb5d2541a282905b854ee4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '334205a8923a09f2e5739d2abff69340') in 0.039979 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Isometric/astronautA_NW.png
+  artifactKey: Guid(2d77e9284bde36846a3bf86089f36ecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Isometric/astronautA_NW.png using Guid(2d77e9284bde36846a3bf86089f36ecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe50e2013795681b134300288790c44e') in 0.033451 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Assets Importados/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Prefabs/MuzzleFlash01.prefab
+  artifactKey: Guid(ad2ab49d0a2a17148bd51c93d977bdbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Prefabs/MuzzleFlash01.prefab using Guid(ad2ab49d0a2a17148bd51c93d977bdbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91ce47960e835f7a4e1bbdb432703ac7') in 0.019588 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Isometric/astronautA_E.png
+  artifactKey: Guid(e15f8e47894c51c44be5441698014bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Isometric/astronautA_E.png using Guid(e15f8e47894c51c44be5441698014bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f33b7611108c0b700ef462ff1eec011f') in 0.031999 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Assets Importados/UnityTechnologies/ParticlePack/Shared/Environment/Materials/ShadowCaster.mat
+  artifactKey: Guid(a7fc4133adf16c3409305f2ee9ed4ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/UnityTechnologies/ParticlePack/Shared/Environment/Materials/ShadowCaster.mat using Guid(a7fc4133adf16c3409305f2ee9ed4ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c69d5347bd1d0ed42aa2de5f7491826') in 0.022890 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Assets Importados/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/PlasmaExplosion.mat
+  artifactKey: Guid(7ff1ab0b724442843965e2dd0f02e969) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/PlasmaExplosion.mat using Guid(7ff1ab0b724442843965e2dd0f02e969) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24fa86b3bc14e1daf3fb8cc3a4559e63') in 0.021695 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Isometric/hangar_roundGlass_NW.png
+  artifactKey: Guid(a9bbe5f218f73254196431977746ac6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Isometric/hangar_roundGlass_NW.png using Guid(a9bbe5f218f73254196431977746ac6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89c6059f54a340896139a606a2788bc0') in 0.032736 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Isometric/astronautA_SW.png
+  artifactKey: Guid(de2c88f5cc354a14aad5f912c13d5827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Isometric/astronautA_SW.png using Guid(de2c88f5cc354a14aad5f912c13d5827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64dba32947c47a151c8e067c2c670e01') in 0.035585 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Models/FBX format/astronautB.fbx
+  artifactKey: Guid(a48b97ffc0339c745a66abc46627fcf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Models/FBX format/astronautB.fbx using Guid(a48b97ffc0339c745a66abc46627fcf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '222f0d3bdf45fddc7661b067ee05f015') in 0.110911 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 39
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Assets Importados/UnityTechnologies/ParticlePack/Shared/Environment/Models/LongOverhangWall.fbx
+  artifactKey: Guid(8e725cb41275efd4b90ded8d12a97e28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/UnityTechnologies/ParticlePack/Shared/Environment/Models/LongOverhangWall.fbx using Guid(8e725cb41275efd4b90ded8d12a97e28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7996a67d143bc9c8790c94457b41f1e6') in 0.064217 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Isometric/astronautA_NE.png
+  artifactKey: Guid(c8d03c3c2597c674cb4903a7b23fc13d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Isometric/astronautA_NE.png using Guid(c8d03c3c2597c674cb4903a7b23fc13d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5016703d15eeb43d9d6e7154acb0bf0c') in 0.035418 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Isometric/astronautB_E.png
+  artifactKey: Guid(d4307f61c68b23c489e24e01ad089851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Isometric/astronautB_E.png using Guid(d4307f61c68b23c489e24e01ad089851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07a366a9cbaaefe1343a84ec671c1e72') in 0.033668 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Isometric/astronautB_SE.png
+  artifactKey: Guid(d07868fa024d54945814ce627dcff618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Isometric/astronautB_SE.png using Guid(d07868fa024d54945814ce627dcff618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a621e7481fe9a8bbf4f60a726934207') in 0.038111 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Isometric/monorail_trainPassenger_SE.png
+  artifactKey: Guid(42a8783dedfac1f4f81cd7be883805cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Isometric/monorail_trainPassenger_SE.png using Guid(42a8783dedfac1f4f81cd7be883805cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2227b306969207704dad0e5976531f67') in 0.037091 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Assets Importados/Spaceship Fighter/Models/Laser.FBX
+  artifactKey: Guid(e5851ba829a27194bb60166828dd388c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/Spaceship Fighter/Models/Laser.FBX using Guid(e5851ba829a27194bb60166828dd388c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9ffc8a980b574afac99cc5d3dad15dd') in 0.153322 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Assets Importados/AssetSpaces/Models/DAE format/astronautA.dae
+  artifactKey: Guid(921e633358f04d148bd0183e008ff5c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/AssetSpaces/Models/DAE format/astronautA.dae using Guid(921e633358f04d148bd0183e008ff5c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2e9f75b2cf4a4e90ec683bb5e6cbaec') in 0.143311 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 41
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Assets Importados/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Materials/GoopSplashParticle.mat
+  artifactKey: Guid(6f3ee23817d2bd74681209e519f72618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets Importados/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Materials/GoopSplashParticle.mat using Guid(6f3ee23817d2bd74681209e519f72618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '616e08b46025877ceaeef35508303250') in 5.030237 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.565 seconds
+Refreshing native plugins compatible for Editor in 7.30 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.304 seconds
+Domain Reload Profiling: 1866ms
+	BeginReloadAssembly (186ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (291ms)
+		LoadAssemblies (384ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (17ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1305ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (519ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (79ms)
+			ProcessInitializeOnLoadAttributes (393ms)
+			ProcessInitializeOnLoadMethodAttributes (21ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 6.38 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3357 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (1.3 MB). Loaded Objects now: 3950.
+Memory consumption went from 225.3 MB to 224.0 MB.
+Total: 3.835700 ms (FindLiveObjects: 0.373300 ms CreateObjectMapping: 0.120100 ms MarkObjects: 2.954300 ms  DeleteObjects: 0.386600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.503 seconds
+Refreshing native plugins compatible for Editor in 3.83 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.168 seconds
+Domain Reload Profiling: 1666ms
+	BeginReloadAssembly (157ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (263ms)
+		LoadAssemblies (335ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (1169ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (450ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (73ms)
+			ProcessInitializeOnLoadAttributes (334ms)
+			ProcessInitializeOnLoadMethodAttributes (19ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 4.31 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3357 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 35 unused Assets / (1.3 MB). Loaded Objects now: 3965.
+Memory consumption went from 227.2 MB to 225.9 MB.
+Total: 3.596100 ms (FindLiveObjects: 0.305300 ms CreateObjectMapping: 0.102500 ms MarkObjects: 2.858200 ms  DeleteObjects: 0.328700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.516 seconds
+Refreshing native plugins compatible for Editor in 4.83 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.143 seconds
+Domain Reload Profiling: 1655ms
+	BeginReloadAssembly (160ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (272ms)
+		LoadAssemblies (344ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (15ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1143ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (463ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (70ms)
+			ProcessInitializeOnLoadAttributes (345ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 6.25 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3357 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 35 unused Assets / (1.3 MB). Loaded Objects now: 3980.
+Memory consumption went from 229.2 MB to 227.9 MB.
+Total: 4.038600 ms (FindLiveObjects: 0.449000 ms CreateObjectMapping: 0.297400 ms MarkObjects: 2.975800 ms  DeleteObjects: 0.314300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.488 seconds
+Refreshing native plugins compatible for Editor in 4.25 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.077 seconds
+Domain Reload Profiling: 1561ms
+	BeginReloadAssembly (159ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (245ms)
+		LoadAssemblies (320ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1078ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (445ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (67ms)
+			ProcessInitializeOnLoadAttributes (329ms)
+			ProcessInitializeOnLoadMethodAttributes (19ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 4.08 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3357 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 35 unused Assets / (1.3 MB). Loaded Objects now: 3995.
+Memory consumption went from 231.1 MB to 229.8 MB.
+Total: 4.214500 ms (FindLiveObjects: 0.420300 ms CreateObjectMapping: 0.229400 ms MarkObjects: 3.112500 ms  DeleteObjects: 0.450100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.477 seconds
+Refreshing native plugins compatible for Editor in 3.99 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.106 seconds
+Domain Reload Profiling: 1579ms
+	BeginReloadAssembly (152ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (247ms)
+		LoadAssemblies (316ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1107ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (434ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (68ms)
+			ProcessInitializeOnLoadAttributes (323ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 4.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3357 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 35 unused Assets / (1.3 MB). Loaded Objects now: 4010.
+Memory consumption went from 233.1 MB to 231.7 MB.
+Total: 3.572600 ms (FindLiveObjects: 0.321900 ms CreateObjectMapping: 0.100000 ms MarkObjects: 2.788300 ms  DeleteObjects: 0.360900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.509 seconds
+Refreshing native plugins compatible for Editor in 4.38 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.115 seconds
+Domain Reload Profiling: 1620ms
+	BeginReloadAssembly (158ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (266ms)
+		LoadAssemblies (340ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1116ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (443ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (71ms)
+			ProcessInitializeOnLoadAttributes (326ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 4.27 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3357 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 35 unused Assets / (1.3 MB). Loaded Objects now: 4025.
+Memory consumption went from 235.0 MB to 233.7 MB.
+Total: 3.890500 ms (FindLiveObjects: 0.305200 ms CreateObjectMapping: 0.104900 ms MarkObjects: 3.102200 ms  DeleteObjects: 0.377100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.524 seconds
+Refreshing native plugins compatible for Editor in 4.59 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.191 seconds
+Domain Reload Profiling: 1710ms
+	BeginReloadAssembly (178ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (256ms)
+		LoadAssemblies (336ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1191ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (469ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (74ms)
+			ProcessInitializeOnLoadAttributes (346ms)
+			ProcessInitializeOnLoadMethodAttributes (21ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 5.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3357 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 35 unused Assets / (1.3 MB). Loaded Objects now: 4040.
+Memory consumption went from 236.9 MB to 235.6 MB.
+Total: 3.946300 ms (FindLiveObjects: 0.390700 ms CreateObjectMapping: 0.129100 ms MarkObjects: 3.047200 ms  DeleteObjects: 0.377700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
