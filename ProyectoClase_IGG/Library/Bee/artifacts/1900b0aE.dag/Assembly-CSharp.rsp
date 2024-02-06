@@ -364,10 +364,11 @@
 "Assets/Assets Importados/UnityTechnologies/ParticlePack/Shared/Scripts/SimpleCameraController.cs"
 "Assets/Assets Importados/UnityTechnologies/ParticlePack/Shared/Scripts/SimpleCharacterMotor.cs"
 "Assets/Assets Importados/UnityTechnologies/ParticlePack/TutorialInfo/Scripts/Readme.cs"
-"Assets/ProyectoIGG/Scripts/AsteroideMovement.cs"
-"Assets/ProyectoIGG/Scripts/AsteroideSpawn.cs"
+"Assets/ProyectoIGG/Scripts/Asteroide/AsteroideMovement.cs"
+"Assets/ProyectoIGG/Scripts/Asteroide/AsteroideSpawn.cs"
+"Assets/ProyectoIGG/Scripts/Asteroide/PadreMovement1.cs"
+"Assets/ProyectoIGG/Scripts/Menus/MenuInicial.cs"
 "Assets/ProyectoIGG/Scripts/MusicController.cs"
-"Assets/ProyectoIGG/Scripts/PadreMovement1.cs"
 "Assets/ProyectoIGG/Scripts/SpaceshipController2D.cs"
 -langversion:9.0
 

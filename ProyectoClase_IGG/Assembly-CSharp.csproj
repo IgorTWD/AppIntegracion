@@ -60,17 +60,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\Shared\Scripts\AdjustTimeScale.cs" />
+    <Compile Include="Assets\ProyectoIGG\Scripts\Asteroide\PadreMovement1.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\Shared\Scripts\ProximityActivate.cs" />
     <Compile Include="Assets\ProyectoIGG\Scripts\SpaceshipController2D.cs" />
-    <Compile Include="Assets\ProyectoIGG\Scripts\AsteroideSpawn.cs" />
-    <Compile Include="Assets\ProyectoIGG\Scripts\PadreMovement1.cs" />
+    <Compile Include="Assets\ProyectoIGG\Scripts\Asteroide\AsteroideSpawn.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCharacterMotor.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\Shared\Ramps\Runtime\RampAsset.cs" />
     <Compile Include="Assets\ProyectoIGG\Scripts\MusicController.cs" />
+    <Compile Include="Assets\ProyectoIGG\Scripts\Asteroide\AsteroideMovement.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\ProyectoIGG\Scripts\AsteroideMovement.cs" />
+    <Compile Include="Assets\ProyectoIGG\Scripts\Menus\MenuInicial.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMPro.cginc" />
