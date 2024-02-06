@@ -59,19 +59,20 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.15f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ProyectoIGG\Scripts\SC_MusicController.cs" />
+    <Compile Include="Assets\ProyectoIGG\Scripts\Asteroide\SC_AsteroideMovement.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\Shared\Scripts\AdjustTimeScale.cs" />
-    <Compile Include="Assets\ProyectoIGG\Scripts\Asteroide\PadreMovement1.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
+    <Compile Include="Assets\ProyectoIGG\Scripts\SC_Vida.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\Shared\Scripts\ProximityActivate.cs" />
-    <Compile Include="Assets\ProyectoIGG\Scripts\SpaceshipController2D.cs" />
-    <Compile Include="Assets\ProyectoIGG\Scripts\Asteroide\AsteroideSpawn.cs" />
+    <Compile Include="Assets\ProyectoIGG\Scripts\SC_SpaceshipController2D.cs" />
+    <Compile Include="Assets\ProyectoIGG\Scripts\SC_MenuInicial.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCharacterMotor.cs" />
+    <Compile Include="Assets\ProyectoIGG\Scripts\Asteroide\SC_PadreMovement1.cs" />
+    <Compile Include="Assets\ProyectoIGG\Scripts\Asteroide\SC_AsteroideSpawn.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\Shared\Ramps\Runtime\RampAsset.cs" />
-    <Compile Include="Assets\ProyectoIGG\Scripts\MusicController.cs" />
-    <Compile Include="Assets\ProyectoIGG\Scripts\Asteroide\AsteroideMovement.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\ProyectoIGG\Scripts\Menus\MenuInicial.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMPro.cginc" />

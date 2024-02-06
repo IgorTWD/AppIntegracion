@@ -364,12 +364,13 @@
 "Assets/Assets Importados/UnityTechnologies/ParticlePack/Shared/Scripts/SimpleCameraController.cs"
 "Assets/Assets Importados/UnityTechnologies/ParticlePack/Shared/Scripts/SimpleCharacterMotor.cs"
 "Assets/Assets Importados/UnityTechnologies/ParticlePack/TutorialInfo/Scripts/Readme.cs"
-"Assets/ProyectoIGG/Scripts/Asteroide/AsteroideMovement.cs"
-"Assets/ProyectoIGG/Scripts/Asteroide/AsteroideSpawn.cs"
-"Assets/ProyectoIGG/Scripts/Asteroide/PadreMovement1.cs"
-"Assets/ProyectoIGG/Scripts/Menus/MenuInicial.cs"
-"Assets/ProyectoIGG/Scripts/MusicController.cs"
-"Assets/ProyectoIGG/Scripts/SpaceshipController2D.cs"
+"Assets/ProyectoIGG/Scripts/Asteroide/SC_AsteroideMovement.cs"
+"Assets/ProyectoIGG/Scripts/Asteroide/SC_AsteroideSpawn.cs"
+"Assets/ProyectoIGG/Scripts/Asteroide/SC_PadreMovement1.cs"
+"Assets/ProyectoIGG/Scripts/SC_MenuInicial.cs"
+"Assets/ProyectoIGG/Scripts/SC_MusicController.cs"
+"Assets/ProyectoIGG/Scripts/SC_SpaceshipController2D.cs"
+"Assets/ProyectoIGG/Scripts/SC_Vida.cs"
 -langversion:9.0
 
 /deterministic
