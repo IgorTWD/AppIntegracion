@@ -1,5 +1,0 @@
-sceneSetups:
-- path: Assets/ProyectoIGG/Escenas/3LunarLandScapeIGG.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
