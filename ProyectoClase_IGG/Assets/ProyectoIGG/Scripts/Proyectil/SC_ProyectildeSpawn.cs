@@ -1,4 +1,5 @@
 
+using System.Diagnostics;
 using UnityEngine;
 
 public class ProyectilSpawn : MonoBehaviour
@@ -6,6 +7,7 @@ public class ProyectilSpawn : MonoBehaviour
     // Declaracion de variables publicas para poderlas editar en el viewport directamente.
     public GameObject proyectilPrefab;
     public float spawnRate = 5.0f; // Intervalo en segundos entre spawns
+    public bool right = true;
 
     private void Start()
     {
@@ -18,7 +20,31 @@ public class ProyectilSpawn : MonoBehaviour
     {
         // Usa la posición del objeto actual (Spawner) para el spawn
         Vector3 spawnPosition = transform.position;
-        Quaternion spawnRotation = Quaternion.Euler(0, 90, 0);
-        Instantiate(proyectilPrefab, spawnPosition, spawnRotation);
+        Quaternion spawnRotation;
+        if (right)
+        {
+            // Si 'right' es verdadero, rota el prefab para que mire hacia la derecha
+            spawnRotation = Quaternion.Euler(0, -90, 0); // Ajusta estos valores según sea necesario
+        }
+        else
+        {
+            // Si 'right' es falso, rota el prefab para que mire hacia la izquierda
+            spawnRotation = Quaternion.Euler(0, 90, 0); // Ajusta estos valores según sea necesario
+        }
+
+
+        // Instancia el proyectil
+        GameObject proyectil = Instantiate(proyectilPrefab, spawnPosition, spawnRotation);
+
+        // Asigna la dirección de movimiento del proyectil instanciado basada en la variable 'right'
+        PadreProyectilMovement proyectilMovement = proyectil.GetComponent<PadreProyectilMovement>();
+        if (proyectilMovement != null) // Asegura que el proyectil tenga el componente PadreProyectilMovement
+        {
+            proyectilMovement.right = right;
+        }
+        else
+        {
+            //Debug.LogWarning("ProyectilSpawn: El proyectil instanciado no tiene un componente PadreProyectilMovement.");
+        }
     }
 }

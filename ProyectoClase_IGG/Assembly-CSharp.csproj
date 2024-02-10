@@ -66,6 +66,7 @@
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
     <Compile Include="Assets\ProyectoIGG\Scripts\SC_Vida.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\Shared\Scripts\ProximityActivate.cs" />
+    <Compile Include="Assets\ProyectoIGG\Scripts\ActivadorDeColliderYParticulas.cs" />
     <Compile Include="Assets\ProyectoIGG\Scripts\SC_SpaceshipController2D.cs" />
     <Compile Include="Assets\ProyectoIGG\Scripts\SC_MenuInicial.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCameraController.cs" />
