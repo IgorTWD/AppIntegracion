@@ -4151,7 +4151,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537843791}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.005689671, y: -0.002439523, z: -0.0000043192204, w: 0.9999809}
+  m_LocalRotation: {x: -0.005689671, y: -0.002439523, z: -0.0000043190503, w: 0.9999809}
   m_LocalPosition: {x: -2.7485313, y: -2.0570202, z: -3.2292547}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5624,6 +5624,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1923734839}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: dcb42c930ec10fb4b9537922bc5f0921, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -4660651839558579860, guid: fd3da96e41adabc4e8f22493a79d6b6d, type: 3}
     - target: {fileID: 1967013060270112, guid: a0fc9e1005dfa19489c0420140a3b1fa, type: 3}
       propertyPath: m_Name
       value: Nave
@@ -5880,10 +5884,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: -182.677
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: dcb42c930ec10fb4b9537922bc5f0921, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: -4660651839558579860, guid: fd3da96e41adabc4e8f22493a79d6b6d, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 1358113419232298, guid: a0fc9e1005dfa19489c0420140a3b1fa, type: 3}
@@ -5968,6 +5968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thrustForce: 100
+  thrustSideForce: 50
   rotationSpeed: 100
   thrustSound: {fileID: 8300000, guid: b33b1d3fb23ec2f4499d9b16ea112595, type: 3}
   sideThrustSound: {fileID: 8300000, guid: c717350260715ba4d9e024414fd013d3, type: 3}
@@ -5976,6 +5977,7 @@ MonoBehaviour:
   leftParticles: {fileID: 626099729}
   rightParticles: {fileID: 786654679}
   fadeAnimator: {fileID: 0}
+  explosionParticlesPrefab: {fileID: 1828176872806910, guid: 64891a0eb28db934898420d80ca07cb3, type: 3}
 --- !u!61 &2069702765
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6005,7 +6007,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -7.7, y: -1.2}
@@ -6050,7 +6052,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -25.1}

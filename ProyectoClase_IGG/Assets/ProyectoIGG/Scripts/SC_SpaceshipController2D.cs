@@ -191,6 +191,7 @@ public class SpaceshipController2D : MonoBehaviour
             Explota();
             Debug.Log("No te salgas!");
             musicController.PlayDefeatSound();
+            musicController.PlayExplosionSound();
             win = false;
             DetenerNave();
             StartCoroutine(RestartGameAfterDelay(4.0f));
@@ -249,7 +250,7 @@ public class SpaceshipController2D : MonoBehaviour
 
         // Oculta o desactiva la nave
         //GetComponent<SpriteRenderer>().enabled = false; // Asume que la nave usa SpriteRenderer
-        // O si prefieres desactivar completamente el objeto de la nave (incluyendo todos sus componentes)
+        // O desactivar completamente el objeto de la nave (incluyendo todos sus componentes)
         //gameObject.SetActive(false);
 
         // Opcional: Destruir la nave después de un delay, si la explosión tiene una duración conocida
