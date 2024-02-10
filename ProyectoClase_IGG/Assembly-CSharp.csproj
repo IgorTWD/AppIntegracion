@@ -62,6 +62,7 @@
     <Compile Include="Assets\ProyectoIGG\Scripts\SC_MusicController.cs" />
     <Compile Include="Assets\ProyectoIGG\Scripts\Asteroide\SC_AsteroideMovement.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\Shared\Scripts\AdjustTimeScale.cs" />
+    <Compile Include="Assets\ProyectoIGG\Scripts\Proyectil\SC_PadreProyectilMovement1.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
     <Compile Include="Assets\ProyectoIGG\Scripts\SC_Vida.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\Shared\Scripts\ProximityActivate.cs" />
@@ -71,7 +72,9 @@
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCharacterMotor.cs" />
     <Compile Include="Assets\ProyectoIGG\Scripts\Asteroide\SC_PadreMovement1.cs" />
     <Compile Include="Assets\ProyectoIGG\Scripts\Asteroide\SC_AsteroideSpawn.cs" />
+    <Compile Include="Assets\ProyectoIGG\Scripts\Proyectil\SC_ProyectilMovement.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\Shared\Ramps\Runtime\RampAsset.cs" />
+    <Compile Include="Assets\ProyectoIGG\Scripts\Proyectil\SC_ProyectildeSpawn.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\TutorialInfo\Scripts\Readme.cs" />
   </ItemGroup>
   <ItemGroup>
