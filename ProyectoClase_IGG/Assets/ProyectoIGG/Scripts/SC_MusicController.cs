@@ -16,12 +16,19 @@ public class MusicController : MonoBehaviour
 
     void Start()
     {
-        // Busca 2 componentes fuentes de audio en el objeto del script.
+        // Busca 2 fuentes de audio, sino crea el que falta.
         AudioSource[] audioSources = GetComponents<AudioSource>();
-        
-        audioSourceBack = audioSources[0]; // Para musica de fondo
-        audioSourceEfect = audioSources[1]; // Para efectos de sonido.
-        
+        if (audioSources.Length > 1)
+        {
+            audioSourceBack = audioSources[0]; // Para musica de fondo
+            audioSourceEfect = audioSources[1]; // Para efectos de sonido.
+        }
+        else
+        {
+            audioSourceBack = GetComponent<AudioSource>();
+            // Crea dinamicamente otro AudioSource para efectos de sonido si no se encuentra
+            audioSourceEfect = gameObject.AddComponent<AudioSource>();
+        }
         PlayBackgroundMusic();
     }
 
@@ -36,16 +43,16 @@ public class MusicController : MonoBehaviour
     // Metodo que inicia musica de victoria
     public void PlayVictoryMusic()
     {
-        audioSourceBack.Stop(); // Detiene la m�sica de fondo
+        audioSourceBack.Stop(); // Detiene la musica de fondo
         audioSourceBack.clip = winSound; // Cambia la fuente de audio
         audioSourceBack.loop = false; // Quita el loop
         audioSourceBack.Play(); // Reproduce audio
 
-        // Inicia una coroutine para pausar el hilo y reproducir el segundo sonido despu�s de este
+        // Inicia una coroutine para pausar el hilo y reproducir el segundo sonido despues de este
         StartCoroutine(PlaySecondSoundAfterDelay(winSound.length));
     }
 
-    // Metodo que inicia 2� musica de victoria con delay para dar tiempo a la primera
+    // Metodo que inicia 2 musica de victoria con delay para dar tiempo a la primera
     private IEnumerator PlaySecondSoundAfterDelay(float delay)
     {
         // Espera a que el primer sonido termine
@@ -60,7 +67,7 @@ public class MusicController : MonoBehaviour
     // Metodo que inicia musica cuando colisionas con el escenario
     public void PlayDefeatSound()
     {
-        audioSourceBack.Stop(); // Detiene la m�sica de fondo
+        audioSourceBack.Stop(); // Detiene la musica de fondo
         audioSourceBack.clip = loseSound;
         audioSourceBack.loop = false;
         audioSourceBack.Play();
@@ -69,7 +76,7 @@ public class MusicController : MonoBehaviour
     // Metodo que inicia la musica cuando colisionas con asteroides
     public void PlayExplosionSound()
     {
-        audioSourceBack.Stop(); // Detiene la m�sica de fondo
+        audioSourceBack.Stop(); // Detiene la musica de fondo
         audioSourceBack.clip = explosionLoseSound;
         audioSourceBack.loop = false;
         audioSourceBack.Play();
@@ -83,3 +90,5 @@ public class MusicController : MonoBehaviour
     }
 
 }
+
+

@@ -6082,7 +6082,7 @@ MonoBehaviour:
   loseSound: {fileID: 8300000, guid: aa967a280457c054bb646d57611f5bd0, type: 3}
   explosionLoseSound: {fileID: 8300000, guid: 21c4a490b24ba2045bc815f7626a40ef, type: 3}
   winSound2: {fileID: 8300000, guid: cfce0cea076109f478783201b2a9f57f, type: 3}
-  damange: {fileID: 0}
+  damange: {fileID: 8300000, guid: 1d74880bed4586644a16a79a2d9dc8af, type: 3}
 --- !u!1001 &1336168005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8353,7 +8353,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1790715422}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.005689671, y: -0.002439523, z: -0.000004141635, w: 0.9999809}
+  m_LocalRotation: {x: -0.005689671, y: -0.002439523, z: -0.0000041416224, w: 0.9999809}
   m_LocalPosition: {x: -69.22286, y: 9.056772, z: 0.67136765}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

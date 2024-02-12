@@ -4604,7 +4604,7 @@ MonoBehaviour:
   loseSound: {fileID: 8300000, guid: aa967a280457c054bb646d57611f5bd0, type: 3}
   explosionLoseSound: {fileID: 8300000, guid: 21c4a490b24ba2045bc815f7626a40ef, type: 3}
   winSound2: {fileID: 8300000, guid: cfce0cea076109f478783201b2a9f57f, type: 3}
-  damange: {fileID: 0}
+  damange: {fileID: 8300000, guid: 1d74880bed4586644a16a79a2d9dc8af, type: 3}
 --- !u!4 &1340751357 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1863717009191007017, guid: 17eccaaf4fc4b460bbfe80bacb3bc357, type: 3}
