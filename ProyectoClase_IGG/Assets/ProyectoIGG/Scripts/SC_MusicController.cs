@@ -1,6 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class MusicController : MonoBehaviour
 {
@@ -10,66 +9,77 @@ public class MusicController : MonoBehaviour
     public AudioClip loseSound;
     public AudioClip explosionLoseSound;
     public AudioClip winSound2; // Segundo sonido a reproducir
+    public AudioClip damange;
     // La fuente de audio, quien tiene el play.
-    private AudioSource audioSource;
+    private AudioSource audioSourceBack;
+    private AudioSource audioSourceEfect;
 
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        // Busca 2 componentes fuentes de audio en el objeto del script.
+        AudioSource[] audioSources = GetComponents<AudioSource>();
+        
+        audioSourceBack = audioSources[0]; // Para musica de fondo
+        audioSourceEfect = audioSources[1]; // Para efectos de sonido.
+        
         PlayBackgroundMusic();
     }
 
     // Metodo que inicia musica de fondo
     public void PlayBackgroundMusic()
     {
-        audioSource.clip = backgroundMusic;
-        audioSource.loop = true;
-        audioSource.Play();
+        audioSourceBack.clip = backgroundMusic;
+        audioSourceBack.loop = true;
+        audioSourceBack.Play();
     }
 
     // Metodo que inicia musica de victoria
     public void PlayVictoryMusic()
     {
-        audioSource.Stop(); // Detiene la música de fondo
-        audioSource.clip = winSound; // Cambia la fuente de audio
-        audioSource.loop = false; // Quita el loop
-        audioSource.Play(); // Reproduce audio
+        audioSourceBack.Stop(); // Detiene la mï¿½sica de fondo
+        audioSourceBack.clip = winSound; // Cambia la fuente de audio
+        audioSourceBack.loop = false; // Quita el loop
+        audioSourceBack.Play(); // Reproduce audio
 
-        // Inicia una coroutine para pausar el hilo y reproducir el segundo sonido después de este
+        // Inicia una coroutine para pausar el hilo y reproducir el segundo sonido despuï¿½s de este
         StartCoroutine(PlaySecondSoundAfterDelay(winSound.length));
     }
 
-    // Metodo que inicia 2º musica de victoria con delay para dar tiempo a la primera
+    // Metodo que inicia 2ï¿½ musica de victoria con delay para dar tiempo a la primera
     private IEnumerator PlaySecondSoundAfterDelay(float delay)
     {
         // Espera a que el primer sonido termine
         yield return new WaitForSeconds(delay);
 
         // Reproduce el segundo sonido despues del delay
-        audioSource.clip = winSound2;
-        audioSource.loop = false; 
-        audioSource.Play();
+        audioSourceBack.clip = winSound2;
+        audioSourceBack.loop = false;
+        audioSourceBack.Play();
     }
 
     // Metodo que inicia musica cuando colisionas con el escenario
     public void PlayDefeatSound()
     {
-        audioSource.Stop(); // Detiene la música de fondo
-        audioSource.clip = loseSound;
-        audioSource.loop = false;
-        audioSource.Play();
-
+        audioSourceBack.Stop(); // Detiene la mï¿½sica de fondo
+        audioSourceBack.clip = loseSound;
+        audioSourceBack.loop = false;
+        audioSourceBack.Play();
     }
 
     // Metodo que inicia la musica cuando colisionas con asteroides
     public void PlayExplosionSound()
     {
-        audioSource.Stop(); // Detiene la música de fondo
-        audioSource.clip = explosionLoseSound;
-        audioSource.loop = false;
-        audioSource.Play();
+        audioSourceBack.Stop(); // Detiene la mï¿½sica de fondo
+        audioSourceBack.clip = explosionLoseSound;
+        audioSourceBack.loop = false;
+        audioSourceBack.Play();
     }
-   
-    
-}
 
+    public void PlayDamange()
+    {
+        audioSourceEfect.clip = damange;
+        audioSourceEfect.loop = false;
+        audioSourceEfect.Play();
+    }
+
+}
