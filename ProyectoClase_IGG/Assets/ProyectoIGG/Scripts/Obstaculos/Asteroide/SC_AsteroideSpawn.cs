@@ -9,7 +9,7 @@ public class AsteroideSpawn : MonoBehaviour
     public float minHeight = 17.0f; // Altura mínima de spawn
     public float maxHeight = 33.0f; // Altura máxima de spawn
     public float spawnXPosition = -99.0f; // Posición X para spawn (negativo para izquierda, positivo para derecha)
-    public float spawnZPosition = -99.0f; // Posición X para spawn (negativo para izquierda, positivo para derecha)
+    public float spawnZPosition = -99.0f; // Posición Z para spawn 
 
     private void Start()
     {
