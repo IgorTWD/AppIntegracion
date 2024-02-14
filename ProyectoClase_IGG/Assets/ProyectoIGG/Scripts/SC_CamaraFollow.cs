@@ -3,14 +3,14 @@ using Cinemachine;
 
 public class SC_CamaraFollow : MonoBehaviour
 {
-    public CinemachineVirtualCamera virtualCamera; // Referencia a la cámara Virtual de Cinemachine
-    public string playerTag = "Player"; // El tag asignado a tu nave/jugador
+    public CinemachineVirtualCamera virtualCamera; // Referencia a la cámara Virtual.
 
     void Update()
     {
         if (virtualCamera.Follow == null)
         {
-            GameObject player = GameObject.FindGameObjectWithTag(playerTag);
+            // Busca la nave en la escena por el tag.
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
             if (player != null)
             {
                 virtualCamera.Follow = player.transform;
