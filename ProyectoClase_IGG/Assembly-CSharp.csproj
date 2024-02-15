@@ -60,27 +60,27 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.20f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ProyectoIGG\Scripts\SC_MusicController.cs" />
-    <Compile Include="Assets\ProyectoIGG\Scripts\Obstaculos\Asteroide\SC_AsteroideSpawn.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\Shared\Scripts\AdjustTimeScale.cs" />
-    <Compile Include="Assets\ProyectoIGG\Scripts\SC_CamaraFollow.cs" />
-    <Compile Include="Assets\ProyectoIGG\Scripts\Obstaculos\Proyectil\SC_PadreProyectilMovement1.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
-    <Compile Include="Assets\ProyectoIGG\Scripts\Obstaculos\Proyectil\SC_ProyectilMovement.cs" />
+    <Compile Include="Assets\Actores\UI\SC_MenuInicial.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\Shared\Scripts\ProximityActivate.cs" />
-    <Compile Include="Assets\ProyectoIGG\Scripts\Nave\SC_Vida.cs" />
-    <Compile Include="Assets\ProyectoIGG\Scripts\Obstaculos\Proyectil\SC_ProyectildeSpawn.cs" />
-    <Compile Include="Assets\ProyectoIGG\Scripts\Nave\SC_SpaceshipController2D.cs" />
-    <Compile Include="Assets\ProyectoIGG\Scripts\SC_MenuInicial.cs" />
-    <Compile Include="Assets\ProyectoIGG\Scripts\SC_CambiadorDeNave.cs" />
+    <Compile Include="Assets\Actores\Asteroides\SC_AsteroideSpawn.cs" />
+    <Compile Include="Assets\Actores\SC_ActivadorDeColliderYParticulas.cs" />
+    <Compile Include="Assets\Actores\Proyectil\SC_PadreProyectilMovement1.cs" />
+    <Compile Include="Assets\Actores\UI\SC_CambiadorDeNave.cs" />
+    <Compile Include="Assets\Actores\Proyectil\SC_ProyectildeSpawn.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCharacterMotor.cs" />
-    <Compile Include="Assets\ProyectoIGG\Scripts\Obstaculos\Asteroide\SC_PadreMovement1.cs" />
+    <Compile Include="Assets\Actores\Asteroides\SC_AsteroideMovement.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\Shared\Ramps\Runtime\RampAsset.cs" />
-    <Compile Include="Assets\ProyectoIGG\Scripts\Obstaculos\SC_ActivadorDeColliderYParticulas.cs" />
+    <Compile Include="Assets\Actores\Camara\SC_CamaraFollow.cs" />
+    <Compile Include="Assets\Actores\NAves\SC_SpaceshipController2D.cs" />
+    <Compile Include="Assets\Actores\Proyectil\SC_ProyectilMovement.cs" />
+    <Compile Include="Assets\Actores\NAves\SC_Vida.cs" />
+    <Compile Include="Assets\Actores\NAves\SC_Combustible.cs" />
+    <Compile Include="Assets\Actores\Asteroides\SC_PadreMovement1.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\ProyectoIGG\Scripts\SC_Combustible.cs" />
-    <Compile Include="Assets\ProyectoIGG\Scripts\Obstaculos\Asteroide\SC_AsteroideMovement.cs" />
+    <Compile Include="Assets\Actores\SC_MusicController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMPro.cginc" />
