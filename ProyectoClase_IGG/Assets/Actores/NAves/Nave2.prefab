@@ -718,6 +718,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7511558181221131132, guid: dcb42c930ec10fb4b9537922bc5f0921, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -4660651839558579860, guid: fd3da96e41adabc4e8f22493a79d6b6d, type: 3}
     - target: {fileID: 1967013060270112, guid: a0fc9e1005dfa19489c0420140a3b1fa, type: 3}
       propertyPath: m_Name
       value: Nave2
@@ -978,10 +982,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: -182.677
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: dcb42c930ec10fb4b9537922bc5f0921, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: -4660651839558579860, guid: fd3da96e41adabc4e8f22493a79d6b6d, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 1358113419232298, guid: a0fc9e1005dfa19489c0420140a3b1fa, type: 3}
@@ -1069,15 +1069,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 530713e4f6f538742894fd4cd0a82b21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrustForce: 100
-  thrustSideForce: 50
-  rotationSpeed: 100
-  thrustSound: {fileID: 8300000, guid: b33b1d3fb23ec2f4499d9b16ea112595, type: 3}
-  sideThrustSound: {fileID: 8300000, guid: c717350260715ba4d9e024414fd013d3, type: 3}
-  thrustParticles1: {fileID: 206177462484767346}
-  thrustParticles2: {fileID: 2219152652126924658}
-  leftParticles: {fileID: 3301657653464655105}
-  rightParticles: {fileID: 4829211627444356897}
+  impulso: 100
+  impulsoLateral: 50
+  rotacionVelocidad: 75
+  sonidoImpulso: {fileID: 8300000, guid: b33b1d3fb23ec2f4499d9b16ea112595, type: 3}
+  sonidoImpulsoLateral: {fileID: 8300000, guid: c717350260715ba4d9e024414fd013d3, type: 3}
+  particulasMotor_R: {fileID: 206177462484767346}
+  particulasMotor_L: {fileID: 2219152652126924658}
+  particulasMotorFrontal_R: {fileID: 3301657653464655105}
+  particulasMotorFrontal_L: {fileID: 4829211627444356897}
 --- !u!61 &765666378348476088
 BoxCollider2D:
   m_ObjectHideFlags: 0

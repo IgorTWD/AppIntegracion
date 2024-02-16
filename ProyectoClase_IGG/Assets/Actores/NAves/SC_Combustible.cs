@@ -4,8 +4,8 @@ using UnityEngine.UI; // Necesario para trabajar con UI, como Sliders e Images.
 public class SC_Combustible : MonoBehaviour
 {
     // Variables para controlar el combustible.
-    public float combustibleMaximo = 100f; // El máximo de combustible que puede tener.
-    public float combustibleActual; // Cuánto combustible queda actualmente.
+    public float combustibleMaximo = 100f; // El maximo de combustible que puede tener.
+    public float combustibleActual; // Cuanto combustible queda actualmente.
     public float impulsoBase = 1f; // Valor base de impulso que proporciona el combustible.
 
     private int tipoCombustible; // Identifica el tipo de combustible seleccionado.
@@ -25,7 +25,7 @@ public class SC_Combustible : MonoBehaviour
         }
 
         // Inicializa el combustible y configura el slider.
-        tipoCombustible = PlayerPrefs.GetInt("TipoCombustibleSeleccionado", 0); // Usa 0 como valor por defecto para el tipo de combustible "normal".
+        tipoCombustible = PlayerPrefs.GetInt("TipoCombustibleSeleccionado", 0); // Usa 0 como valor por defecto
         combustibleActual = combustibleMaximo;
         sliderCombustible.maxValue = combustibleMaximo;
         ActualizarSliderCombustible(); // Actualiza la UI del slider al inicio.
@@ -33,7 +33,7 @@ public class SC_Combustible : MonoBehaviour
 
     void ActualizarSliderCombustible()
     {
-        // Establece el valor del slider y actualiza el color de fondo según el porcentaje de combustible restante.
+        // Establece el valor del slider y actualiza el color de fondo segun el porcentaje de combustible restante.
         sliderCombustible.value = combustibleActual;
         ActualizarColorFondo();
     }
@@ -52,12 +52,12 @@ public class SC_Combustible : MonoBehaviour
         if (porcentaje <= 0.2f) return Color.red;
         if (porcentaje <= 0.4f) return new Color(1f, 0.64f, 0); // Naranja
         if (porcentaje <= 0.7f) return Color.yellow;
-        return Color.green; // Más del 70% de combustible restante.
+        return Color.green; // Mï¿½s del 70% de combustible restante.
     }
 
     public void ConsumirCombustible(float tiempoAceleracion)
     {
-        // Calcula y aplica el consumo de combustible basado en el tiempo de aceleración y el tipo de combustible.
+        // Calcula y aplica el consumo de combustible basado en el tiempo de aceleracion y el tipo de combustible.
         float consumo = ObtenerModificadorDeConsumo();
         combustibleActual -= consumo * tiempoAceleracion;
         combustibleActual = Mathf.Max(0, combustibleActual); // Asegura que el combustible no sea negativo.
@@ -66,7 +66,7 @@ public class SC_Combustible : MonoBehaviour
 
     float ObtenerModificadorDeConsumo()
     {
-        // Devuelve un factor de consumo específico para cada tipo de combustible.
+        // Devuelve un valor de consumo especifico para cada tipo de combustible.
         switch (tipoCombustible)
         {
             case 0: return 4f; // Normal
@@ -79,14 +79,14 @@ public class SC_Combustible : MonoBehaviour
 
     public float ObtenerModificadorDeImpulso()
     {
-        // Devuelve un valor de impulso específico para cada tipo de combustible.
+        // Devuelve un valor de impulso especifico para cada tipo de combustible.
         switch (tipoCombustible)
         {
-            case 0: return 1f;
-            case 1: return 0.8f;
-            case 2: return 0.2f;
-            case 3: return 4f;
-            default: return 1f;
+            case 0: return 1f; // Normal
+            case 1: return 0.8f; // Premium
+            case 2: return 0.2f; // Eco
+            case 3: return 4f; // Super
+            default: return 1f; // Por defecto
         }
     }
 }

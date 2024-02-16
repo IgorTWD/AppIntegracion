@@ -6,55 +6,55 @@ using System.Diagnostics;
 
 public class SC_Vida : MonoBehaviour
 {
-    private Image[] corazones; // Array para almacenar las referencias a las imágenes de los corazones en la UI
+    private Image[] corazones; // Array para almacenar las referencias a las imagenes de los corazones en la UI
     public int vida; // Representa la vida actual del jugador (3 corazones)
-    public bool invencible = false; // Indica si el jugador es temporalmente invencible (cuando recibe daño)
-    public float tiempoInvencible = 1f; // Tiempo durante el cual el jugador es invencible después de recibir daño
+    public bool invencible = false; // Indica si el jugador es temporalmente invencible (cuando recibe daÃ±o)
+    public float tiempoInvencible = 1f; // Tiempo durante el cual el jugador es invencible despues de recibir daÃ±o
     private bool win;
 
-    // Prefab de las partículas de explosiónes
-    [SerializeField] private GameObject particulaExplosionPrefab; 
+    // Prefab de las particulas de explosiones
+    [SerializeField] private GameObject particulaExplosionPrefab;
     [SerializeField] private GameObject particulaGolpePrefab;
-    // Componente Rigidbody2D para manejar la física
-    private Rigidbody2D rb2d; 
+    // Componente Rigidbody2D para manejar la fisica
+    private Rigidbody2D rb2d;
 
     private void Start()
     {
-        // Encuentra el panel que contiene los corazones de la UI y obtiene todas las imágenes (corazones)
+        // Encuentra el panel que contiene los corazones de la UI y obtiene todas las imagenes
         GameObject panelCorazonesObj = GameObject.Find("PanelDeVida");
         corazones = panelCorazonesObj.GetComponentsInChildren<Image>();
-        vida = corazones.Length; // La vida inicial es igual al número de corazones
+        vida = corazones.Length; // La vida inicial es igual al numero de corazones
 
-        // Obtiene el componente Rigidbody2D para físicas
-        rb2d = GetComponent<Rigidbody2D>(); 
+        // Obtiene el componente Rigidbody2D para fisicas
+        rb2d = GetComponent<Rigidbody2D>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // Busca el controlador de música en la escena
-        MusicController musicController = FindObjectOfType<MusicController>(); 
+        // Busca el controlador de musica en la escena
+        MusicController musicController = FindObjectOfType<MusicController>();
 
-        // Manejo de colisión con objetos con tag Finish
+        // Manejo de colision con objetos con tag Finish
         if (other.gameObject.CompareTag("Finish"))
         {
-            musicController.PlayVictoryMusic(); // Reproduce música de victoria
+            musicController.PlayVictoryMusic(); // Reproduce musica de victoria
             win = true;
             DetenerNave();
-            StartCoroutine(RestartGameAfterDelay(4.0f)); // Espera antes de reiniciar el juego o cargar siguiente nivel
+            StartCoroutine(ReiniciarJuegoConDelay(4.0f)); // Espera antes de reiniciar el juego o cargar siguiente nivel
         }
-        // Manejo de colisión con objetos con tag Muerte
+        // Manejo de colision con objetos con tag Muerte
         else if (other.gameObject.CompareTag("Muerte"))
         {
             ProcesarMuerte(musicController);
         }
-        // Otros casos de colisión que también son muerte
+        // Otros casos de colision que tambiwn son muerte
         else if (!other.gameObject.CompareTag("Finish") && !other.gameObject.CompareTag("NON"))
         {
             ProcesarMuerte(musicController);
         }
     }
 
-    private IEnumerator RestartGameAfterDelay(float delaySeconds)
+    private IEnumerator ReiniciarJuegoConDelay(float delaySeconds)
     {
         yield return new WaitForSeconds(delaySeconds);
         SceneManager.LoadScene(win ? SceneManager.GetActiveScene().buildIndex + 1 : SceneManager.GetActiveScene().buildIndex);
@@ -66,24 +66,24 @@ public class SC_Vida : MonoBehaviour
         ParticleSystem particles = explosionEffect.GetComponent<ParticleSystem>();
         if (particles != null) particles.Play();
         Destroy(explosionEffect, particles.main.duration);
-        foreach (Transform child in transform) child.gameObject.SetActive(false); // Desactiva todos los hijos para simular la destrucción
+        foreach (Transform child in transform) child.gameObject.SetActive(false); // Desactiva todos los hijos para simular la destruccion
     }
 
     public void DetenerNave()
     {
         rb2d.velocity = Vector2.zero;
         rb2d.angularVelocity = 0f;
-        rb2d.isKinematic = true; // Hace la nave inmóvil
+        rb2d.isKinematic = true; // Hace la nave inmovil
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        // Genera partículas en el punto de colisión más reciente
+        // Genera particulas en el punto de colision mas reciente
         if (collision.contacts.Length > 0)
         {
             ContactPoint2D lastContact = collision.contacts[collision.contacts.Length - 1];
             Instantiate(particulaGolpePrefab, lastContact.point, Quaternion.identity);
-            
+
         }
     }
 
@@ -105,7 +105,7 @@ public class SC_Vida : MonoBehaviour
             if (vida >= 0)
             {
                 musicController.PlayDamange();
-                corazones[vida].gameObject.SetActive(false); // Oculta el corazón correspondiente
+                corazones[vida].gameObject.SetActive(false); // Oculta el corazon correspondiente
                 StartCoroutine(Invulrenaribilidad());
             }
             else
@@ -123,7 +123,7 @@ public class SC_Vida : MonoBehaviour
             Explota();
             musicController.PlayExplosionSound();
             win = false;
-            StartCoroutine(RestartGameAfterDelay(4.0f));
+            StartCoroutine(ReiniciarJuegoConDelay(4.0f));
         }
     }
 

@@ -72,6 +72,34 @@ PrefabInstance:
       propertyPath: particulaExplosionPrefab
       value: 
       objectReference: {fileID: 1828176872806910, guid: 64891a0eb28db934898420d80ca07cb3, type: 3}
+    - target: {fileID: 5807836988202730915, guid: dda046a8f8ffc2649acb743846ae16f2, type: 3}
+      propertyPath: impulso
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5807836988202730915, guid: dda046a8f8ffc2649acb743846ae16f2, type: 3}
+      propertyPath: impulsoLateral
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5807836988202730915, guid: dda046a8f8ffc2649acb743846ae16f2, type: 3}
+      propertyPath: particulasMotor_L
+      value: 
+      objectReference: {fileID: 6545536858148174313}
+    - target: {fileID: 5807836988202730915, guid: dda046a8f8ffc2649acb743846ae16f2, type: 3}
+      propertyPath: particulasMotor_R
+      value: 
+      objectReference: {fileID: 5099787596886263017}
+    - target: {fileID: 5807836988202730915, guid: dda046a8f8ffc2649acb743846ae16f2, type: 3}
+      propertyPath: rotacionVelocidad
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5807836988202730915, guid: dda046a8f8ffc2649acb743846ae16f2, type: 3}
+      propertyPath: particulasMotorFrontal_L
+      value: 
+      objectReference: {fileID: 513030890402615738}
+    - target: {fileID: 5807836988202730915, guid: dda046a8f8ffc2649acb743846ae16f2, type: 3}
+      propertyPath: particulasMotorFrontal_R
+      value: 
+      objectReference: {fileID: 7623381027556438938}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 915829439059568095, guid: dda046a8f8ffc2649acb743846ae16f2, type: 3}
@@ -82,3 +110,23 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dda046a8f8ffc2649acb743846ae16f2, type: 3}
+--- !u!198 &513030890402615738 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4829211627444356897, guid: dda046a8f8ffc2649acb743846ae16f2, type: 3}
+  m_PrefabInstance: {fileID: 4907349659619546779}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &5099787596886263017 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 206177462484767346, guid: dda046a8f8ffc2649acb743846ae16f2, type: 3}
+  m_PrefabInstance: {fileID: 4907349659619546779}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &6545536858148174313 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2219152652126924658, guid: dda046a8f8ffc2649acb743846ae16f2, type: 3}
+  m_PrefabInstance: {fileID: 4907349659619546779}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7623381027556438938 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3301657653464655105, guid: dda046a8f8ffc2649acb743846ae16f2, type: 3}
+  m_PrefabInstance: {fileID: 4907349659619546779}
+  m_PrefabAsset: {fileID: 0}

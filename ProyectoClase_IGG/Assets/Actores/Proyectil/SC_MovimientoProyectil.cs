@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PadreProyectilMovement : MonoBehaviour
+public class SC_MovimientoProyectil : MonoBehaviour
 {
     // Declaramos la variable de elocidad de movimiento publica para editarla en el viwport
-    public float speed = 5.0f;
+    public float velocidad = 5.0f;
     public bool right = true;
 
     void Start()
     {
-        // Destruye el asteroide después de 15 segundos
+        // Destruye el asteroide despues de 15 segundos
         Destroy(gameObject, 15f);
     }
 
@@ -20,11 +20,11 @@ public class PadreProyectilMovement : MonoBehaviour
         if (right == false)
         {
             Quaternion spawnRotation = Quaternion.Euler(0, -90, 0);
-            transform.Translate(Vector3.left * speed * Time.deltaTime, Space.World);
+            transform.Translate(Vector3.left * velocidad * Time.deltaTime, Space.World);
         } else if (right == true)
         {
             Quaternion spawnRotation = Quaternion.Euler(0, 90, 0);
-            transform.Translate(Vector3.right * speed * Time.deltaTime, Space.World);
+            transform.Translate(Vector3.right * velocidad * Time.deltaTime, Space.World);
         }
         
     }

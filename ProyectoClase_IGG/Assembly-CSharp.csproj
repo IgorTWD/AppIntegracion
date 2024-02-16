@@ -61,25 +61,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\Shared\Scripts\AdjustTimeScale.cs" />
+    <Compile Include="Assets\Actores\Proyectil\SC_RotacionProyectil.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
     <Compile Include="Assets\Actores\UI\SC_MenuInicial.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\Shared\Scripts\ProximityActivate.cs" />
-    <Compile Include="Assets\Actores\Asteroides\SC_AsteroideSpawn.cs" />
+    <Compile Include="Assets\Actores\Asteroides\SC_SpawnAsteroide.cs" />
+    <Compile Include="Assets\Actores\NAves\SC_ControladorNave2D.cs" />
     <Compile Include="Assets\Actores\SC_ActivadorDeColliderYParticulas.cs" />
-    <Compile Include="Assets\Actores\Proyectil\SC_PadreProyectilMovement1.cs" />
     <Compile Include="Assets\Actores\UI\SC_CambiadorDeNave.cs" />
-    <Compile Include="Assets\Actores\Proyectil\SC_ProyectildeSpawn.cs" />
+    <Compile Include="Assets\Actores\Proyectil\SC_MovimientoProyectil.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCharacterMotor.cs" />
-    <Compile Include="Assets\Actores\Asteroides\SC_AsteroideMovement.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\Shared\Ramps\Runtime\RampAsset.cs" />
     <Compile Include="Assets\Actores\Camara\SC_CamaraFollow.cs" />
-    <Compile Include="Assets\Actores\NAves\SC_SpaceshipController2D.cs" />
-    <Compile Include="Assets\Actores\Proyectil\SC_ProyectilMovement.cs" />
     <Compile Include="Assets\Actores\NAves\SC_Vida.cs" />
+    <Compile Include="Assets\Actores\Asteroides\SC_MovimientoAsteroide.cs" />
     <Compile Include="Assets\Actores\NAves\SC_Combustible.cs" />
-    <Compile Include="Assets\Actores\Asteroides\SC_PadreMovement1.cs" />
     <Compile Include="Assets\Assets Importados\UnityTechnologies\ParticlePack\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Actores\Asteroides\SC_RotacionAsteroide.cs" />
+    <Compile Include="Assets\Actores\Proyectil\SC_SpawnProyectil.cs" />
     <Compile Include="Assets\Actores\SC_MusicController.cs" />
   </ItemGroup>
   <ItemGroup>
