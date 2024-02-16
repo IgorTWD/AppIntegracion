@@ -25,6 +25,7 @@ public class SC_MovimientoAsteroide : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         SC_MusicController musicController = FindObjectOfType<SC_MusicController>();
+        SC_Vida scVida = FindObjectOfType<SC_Vida>();
 
         if (collision.gameObject.tag == "Muerte")
         {
@@ -47,6 +48,10 @@ public class SC_MovimientoAsteroide : MonoBehaviour
             Instantiate(particulasPolvoExplosion, puntoDeContacto, Quaternion.identity);
 
             Debug.Log("Boom player?");
+            if (scVida.vida <= 1)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

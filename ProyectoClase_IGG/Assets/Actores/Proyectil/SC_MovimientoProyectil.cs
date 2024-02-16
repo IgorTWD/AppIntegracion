@@ -11,7 +11,7 @@ public class SC_MovimientoProyectil : MonoBehaviour
     public GameObject particulasExplosion;
     public GameObject particulasPolvoExplosion;
 
-    private int contadorColision = 0;
+    //private int contadorColision = 0;
 
     void Start()
     {
@@ -36,6 +36,7 @@ public class SC_MovimientoProyectil : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         SC_MusicController musicController = FindObjectOfType<SC_MusicController>();
+        SC_Vida scVida = FindObjectOfType<SC_Vida>();
 
         if (collision.gameObject.tag == "Muerte")
         {
@@ -51,7 +52,7 @@ public class SC_MovimientoProyectil : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Player")
         {
-            contadorColision++;
+            //contadorColision++;
 
             // Obtén el punto de contacto
             Vector2 puntoDeContacto = collision.contacts[0].point;
@@ -60,10 +61,15 @@ public class SC_MovimientoProyectil : MonoBehaviour
             Instantiate(particulasPolvoExplosion, puntoDeContacto, Quaternion.identity);
 
             Debug.Log("Boom player?");
-            if (contadorColision >= 2)
+
+            if(scVida.vida <= 0)
             {
                 Destroy(gameObject);
             }
+            //if (contadorColision >= 2)
+            //{
+            //    Destroy(gameObject);
+            //}
         }
     }
 }
