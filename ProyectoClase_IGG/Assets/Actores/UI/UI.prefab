@@ -4454,11 +4454,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backgroundMusic: {fileID: 8300000, guid: 8a011bb85c3ba3146a3ac610dd571922, type: 3}
-  winSound: {fileID: 0}
-  loseSound: {fileID: 0}
-  explosionLoseSound: {fileID: 0}
-  winSound2: {fileID: 0}
-  damange: {fileID: 0}
+  winSound: {fileID: 8300000, guid: 6cf9c85b5a3b88c468b21b9d21250adf, type: 3}
+  loseSound: {fileID: 8300000, guid: aa967a280457c054bb646d57611f5bd0, type: 3}
+  explosionLoseSound: {fileID: 8300000, guid: 21c4a490b24ba2045bc815f7626a40ef, type: 3}
+  winSound2: {fileID: 8300000, guid: cfce0cea076109f478783201b2a9f57f, type: 3}
+  damange: {fileID: 8300000, guid: 1d74880bed4586644a16a79a2d9dc8af, type: 3}
 --- !u!82 &8304353154494768577
 AudioSource:
   m_ObjectHideFlags: 0

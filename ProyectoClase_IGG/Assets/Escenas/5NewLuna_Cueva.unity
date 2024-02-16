@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.040559843, g: 0.038807772, b: 0.04100153, a: 1}
+  m_IndirectSpecularColor: {r: 0.04072383, g: 0.039411496, b: 0.041162677, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9921,7 +9921,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   virtualCamera: {fileID: 816864337}
-  playerTag: Player
 --- !u!1 &817039515
 GameObject:
   m_ObjectHideFlags: 0
@@ -16784,7 +16783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01a5928693496c0419a6d5600ebffd68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundMusic: {fileID: 8300000, guid: e1ac176768f7c3941abf41606a3e16aa, type: 3}
+  backgroundMusic: {fileID: 8300000, guid: ca66be49359888a4a9110a2415bd5644, type: 3}
   winSound: {fileID: 8300000, guid: 6cf9c85b5a3b88c468b21b9d21250adf, type: 3}
   loseSound: {fileID: 8300000, guid: aa967a280457c054bb646d57611f5bd0, type: 3}
   explosionLoseSound: {fileID: 8300000, guid: 21c4a490b24ba2045bc815f7626a40ef, type: 3}
