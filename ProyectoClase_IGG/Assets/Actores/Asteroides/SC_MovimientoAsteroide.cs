@@ -26,8 +26,20 @@ public class SC_MovimientoAsteroide : MonoBehaviour
     {
         SC_MusicController musicController = FindObjectOfType<SC_MusicController>();
         SC_Vida scVida = FindObjectOfType<SC_Vida>();
+        Debug.Log("Vida cada ves que colisiona: " + scVida.vida);
 
-        if (collision.gameObject.tag == "Muerte")
+        if (collision.gameObject.tag == "Player")
+        {
+            // Obtén el punto de contacto
+            Vector2 puntoDeContacto = collision.contacts[0].point;
+
+            // Instancia el sistema de partículas en el punto de contacto
+            Instantiate(particulasPolvoExplosion, puntoDeContacto, Quaternion.identity);
+
+            Debug.Log("Vida actual colision PLAYER: " + scVida.vida);
+           
+        }
+        else if (collision.gameObject.tag == "Muerte")
         {
             // Obtén el punto de contacto
             Vector2 puntoDeContacto = collision.contacts[0].point;
@@ -37,21 +49,12 @@ public class SC_MovimientoAsteroide : MonoBehaviour
             musicController.PlayDamangeAsteroide();
 
             Destroy(gameObject); // Destruye el asteroide
-            Debug.Log("Boom?");
+            Debug.Log("Vida cada ves que colisiona con objeto muerte: " + scVida.vida);
         }
-        else if (collision.gameObject.tag == "Player")
+        if (scVida.vida == 0)
         {
-            // Obtén el punto de contacto
-            Vector2 puntoDeContacto = collision.contacts[0].point;
-
-            // Instancia el sistema de partículas en el punto de contacto
-            Instantiate(particulasPolvoExplosion, puntoDeContacto, Quaternion.identity);
-
-            Debug.Log("Boom player?");
-            if (scVida.vida <= 1)
-            {
-                Destroy(gameObject);
-            }
+            Destroy(gameObject);
+            Debug.Log("coñoooo");
         }
     }
 }

@@ -74,14 +74,10 @@ public class SC_Vida : MonoBehaviour
     {
         rb2d.velocity = Vector2.zero;
         rb2d.angularVelocity = 0f;
-        rb2d.isKinematic = true; // Hace la nave inmovil
+        rb2d.isKinematic = true; // Hace la nave inmóvil
 
-        // Desactiva todos los colliders asociados a este GameObject
-        Collider2D[] colliders = GetComponents<Collider2D>();
-        foreach (Collider2D collider in colliders)
-        {
-            collider.enabled = false;
-        }
+        // Inicia coroutine que desactiva los colliders despues un retraso
+        StartCoroutine(DesactivarCollidersConRetraso(0.5f)); 
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -141,5 +137,19 @@ public class SC_Vida : MonoBehaviour
         invencible = true;
         yield return new WaitForSeconds(tiempoInvencible);
         invencible = false;
+    }
+
+
+    IEnumerator DesactivarCollidersConRetraso(float retraso)
+    {
+        // Espera por el tiempo de retraso especificado
+        yield return new WaitForSeconds(retraso);
+
+        // Desactiva todos los colliders despues del retraso
+        Collider2D[] colliders = GetComponents<Collider2D>();
+        foreach (Collider2D collider in colliders)
+        {
+            collider.enabled = false;
+        }
     }
 }

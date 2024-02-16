@@ -7358,7 +7358,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537843791}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.005689671, y: -0.002439523, z: -0.0000043027476, w: 0.9999809}
+  m_LocalRotation: {x: -0.005689671, y: -0.002439523, z: -0.000004302634, w: 0.9999809}
   m_LocalPosition: {x: -46.30001, y: 8.676092, z: -29.148294}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8947,7 +8947,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8311830115153208271, guid: 65f8d54e05e3740fb9bdbb766689ad5d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.367798
+      value: -37.59
       objectReference: {fileID: 0}
     - target: {fileID: 8311830115153208271, guid: 65f8d54e05e3740fb9bdbb766689ad5d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9011,7 +9011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   asteroidePrefab: {fileID: 6691480826944822800, guid: e5f3b7a92d11f3948ac0dceaf0d3d98a, type: 3}
-  spawnTiempo: 1
+  spawnTiempo: 2
   alturaMin: -7
   alturaMax: 3
   spawnXPosition: 510
@@ -11069,5 +11069,5 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1328898110}
-  - {fileID: 1772213660}
   - {fileID: 506903674}
+  - {fileID: 1772213660}
