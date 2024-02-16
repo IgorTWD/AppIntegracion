@@ -11,6 +11,7 @@ public class SC_Vida : MonoBehaviour
     public bool invencible = false; // Indica si el jugador es temporalmente invencible (cuando recibe daño)
     public float tiempoInvencible = 1f; // Tiempo durante el cual el jugador es invencible despues de recibir daño
     private bool win;
+    private bool muerto;
 
     // Prefab de las particulas de explosiones
     [SerializeField] private GameObject particulaExplosionPrefab;
@@ -32,7 +33,7 @@ public class SC_Vida : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Busca el controlador de musica en la escena
-        MusicController musicController = FindObjectOfType<MusicController>();
+        SC_MusicController musicController = FindObjectOfType<SC_MusicController>();
 
         // Manejo de colision con objetos con tag Finish
         if (other.gameObject.CompareTag("Finish"))
@@ -99,7 +100,7 @@ public class SC_Vida : MonoBehaviour
     {
         if (!invencible && vida > 0)
         {
-            MusicController musicController = FindObjectOfType<MusicController>();
+            SC_MusicController musicController = FindObjectOfType<SC_MusicController>();
             vida -= cantidad;
             vida = Mathf.Max(0, vida); // Asegura que la vida no sea negativa
             if (vida >= 0)
@@ -115,10 +116,11 @@ public class SC_Vida : MonoBehaviour
         }
     }
 
-    private void ProcesarMuerte(MusicController musicController)
+    private void ProcesarMuerte(SC_MusicController musicController)
     {
-        if (vida <= 0)
+        if (vida <= 0 && muerto == false)
         {
+            muerto = true;
             DetenerNave();
             Explota();
             musicController.PlayExplosionSound();

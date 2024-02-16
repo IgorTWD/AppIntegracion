@@ -1,5 +1,6 @@
 
 using System.Diagnostics;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SC_SpawnProyectil : MonoBehaviour
@@ -9,15 +10,31 @@ public class SC_SpawnProyectil : MonoBehaviour
     public float spawnTiempo = 5.0f; // Intervalo en segundos entre spawns
     public bool right = true;
 
+    private GameObject player;
+    public float distanciaActivacion = 20f;
+    private bool estaActivo = false;
+
     private void Start()
     {
+        
         // Invoca repetidamente el metodo Spawn en el intervalo indicado.
-        InvokeRepeating("SpawnAsteroide", spawnTiempo, spawnTiempo);
+        InvokeRepeating("IntentarSpawnAsteroide", spawnTiempo, spawnTiempo);
+    }
+
+    private void IntentarSpawnAsteroide()
+    {
+        player = GameObject.FindWithTag("Player");
+        // Solo intenta spawnear si el jugador está dentro de la distancia de activación
+        if (Vector3.Distance(player.transform.position, transform.position) <= distanciaActivacion)
+        {
+            SpawnAsteroide();
+        }
     }
 
     // Metodo spawnea asteroide en la posicion del spawner.
     private void SpawnAsteroide()
     {
+
         // Usa la posicion del objeto actual (Spawner) para el spawn
         Vector3 spawnPosition = transform.position;
         Quaternion spawnRotation;
@@ -39,6 +56,7 @@ public class SC_SpawnProyectil : MonoBehaviour
         // Asigna la direccion de movimiento del proyectil instanciado basada en la variable 'right'
         SC_MovimientoProyectil proyectilMovement = proyectil.GetComponent<SC_MovimientoProyectil>();
         proyectilMovement.right = right;
+        
 
     }
 }

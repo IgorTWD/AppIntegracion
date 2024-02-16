@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class MusicController : MonoBehaviour
+public class SC_MusicController : MonoBehaviour
 {
     // Declaracion de variables contenedoras de audio publicas para poderlas editar en el viewport directamente.
     public AudioClip backgroundMusic;
@@ -10,6 +10,7 @@ public class MusicController : MonoBehaviour
     public AudioClip explosionLoseSound;
     public AudioClip winSound2; // Segundo sonido a reproducir
     public AudioClip damange;
+    public AudioClip explosionCorta;
     // La fuente de audio, quien tiene el play.
     private AudioSource audioSourceBack;
     private AudioSource audioSourceEfect;
@@ -85,6 +86,20 @@ public class MusicController : MonoBehaviour
     public void PlayDamange()
     {
         audioSourceEfect.clip = damange;
+        audioSourceEfect.loop = false;
+        audioSourceEfect.Play();
+    }
+
+    public void PlayDamangeHielo()
+    {
+        audioSourceEfect.clip = explosionCorta;
+        audioSourceEfect.loop = false;
+        audioSourceEfect.Play();
+    }
+
+    public void PlayDamangeAsteroide()
+    {
+        audioSourceEfect.clip = explosionCorta;
         audioSourceEfect.loop = false;
         audioSourceEfect.Play();
     }

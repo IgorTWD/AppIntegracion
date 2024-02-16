@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 227855013338545881}
   - component: {fileID: 3507974401986065475}
   - component: {fileID: 1008427370821784500}
-  m_Layer: 0
+  - component: {fileID: 6770130034158135445}
+  m_Layer: 1
   m_Name: asteroidPrefab
   m_TagString: Muerte
   m_Icon: {fileID: 0}
@@ -100,7 +101,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d9c52edefd0f254884ca7d6081028f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  velocidad: 8
+  particulasExplosion: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664, type: 3}
+  particulasPolvoExplosion: {fileID: 1025285306637258, guid: d8f0099df63275647a8bcf646df1ca00, type: 3}
 --- !u!61 &3507974401986065475
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -191,6 +194,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.51, y: 0.48}
   m_EdgeRadius: 0
+--- !u!50 &6770130034158135445
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6691480826944822800}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1001 &561743746127009021
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -277,8 +307,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb12e9cd33d2a054eb35e35b6027bf95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  rotationSpeed: 50
+  velocidad: 5
+  velocidadRotacion: 50
 --- !u!1001 &5948184552286799791
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -27,6 +27,12 @@ public class SC_ControladorNave2D : MonoBehaviour
     // Referencia a otro script.
     private SC_Combustible SC_Combustible;
 
+    private bool botonArribaPulsado = false;
+    private bool botonAbajoPulsado = false;
+    private bool botonDerechaPulsado = false;
+    private bool botonIzquierdaPulsado = false;
+    public bool impulsado = false;
+
     // Inicializacion del componente Rigidbody2D y configuracion de los componentes de audio.
     void Start()
     {
@@ -112,12 +118,13 @@ public class SC_ControladorNave2D : MonoBehaviour
     void Impulso()
     {
         // Verifica la entrada del usuario y el combustible antes de aplicar la fuerza.
-        if ((Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W)) && SC_Combustible.combustibleActual > 0)
+        if ((Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W)) && SC_Combustible.combustibleActual > 0 )
         {
             // Aplica fuerza de impulso hacia adelante si hay combustible suficiente.
             Vector2 forwardDirection = transform.up;
             rb2d.AddForce(forwardDirection * impulso * SC_Combustible.ObtenerModificadorDeImpulso());
             SC_Combustible.ConsumirCombustible(Time.fixedDeltaTime);
+            Debug.Log("Impulso hacia adelante activado.");
         }
         else if ((Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S)) && SC_Combustible.combustibleActual > 0)
         {
@@ -161,5 +168,52 @@ public class SC_ControladorNave2D : MonoBehaviour
             rb2d.MoveRotation(rb2d.rotation - rotacionVelocidad * Time.fixedDeltaTime);
             rb2d.angularVelocity = 0f; // Quita velocidad giro
         }
+    }
+
+    public void Impulsado()
+    {
+        impulsado = true;
+        Debug.Log("Impulsado ACtivado.");
+    }
+
+    public void BtArribaPulsado()
+    {
+        botonArribaPulsado = true;
+        Debug.Log("Impulsado ACtivado.");
+    }
+
+    public void BtArribaLiberado()
+    {
+        botonArribaPulsado = false;
+    }
+
+    public void BtAbajoPulsado()
+    {
+        botonAbajoPulsado = true;
+    }
+
+    public void BtAbajoLiberado()
+    {
+        botonAbajoPulsado = false;
+    }
+
+    public void BtDerechaPulsado()
+    {
+        botonDerechaPulsado = true;
+    }
+
+    public void BtDerechaLiberado()
+    {
+        botonDerechaPulsado = false;
+    }
+
+    public void BtIzquierdaPulsado()
+    {
+        botonIzquierdaPulsado = true;
+    }
+
+    public void BtIzquierdaLiberado()
+    {
+        botonIzquierdaPulsado = false;
     }
 }

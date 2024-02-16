@@ -2913,6 +2913,18 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5112631535570729389, guid: c278268765f66e148b161e00f4a2a764, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5112631535570729389, guid: c278268765f66e148b161e00f4a2a764, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5112631535570729389, guid: c278268765f66e148b161e00f4a2a764, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6443326202478087144, guid: c278268765f66e148b161e00f4a2a764, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -2928,6 +2940,26 @@ PrefabInstance:
     - target: {fileID: 6673714330838397452, guid: c278268765f66e148b161e00f4a2a764, type: 3}
       propertyPath: m_Name
       value: HUD
+      objectReference: {fileID: 0}
+    - target: {fileID: 7353595901835596947, guid: c278268765f66e148b161e00f4a2a764, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00004913658
+      objectReference: {fileID: 0}
+    - target: {fileID: 7353595901835596947, guid: c278268765f66e148b161e00f4a2a764, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.00008897024
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135031585107932605, guid: c278268765f66e148b161e00f4a2a764, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135031585107932605, guid: c278268765f66e148b161e00f4a2a764, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135031585107932605, guid: c278268765f66e148b161e00f4a2a764, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3225,9 +3257,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   asteroidePrefab: {fileID: 6691480826944822800, guid: e5f3b7a92d11f3948ac0dceaf0d3d98a, type: 3}
-  spawnRate: 5
-  minHeight: 23
-  maxHeight: 37
+  spawnTiempo: 5
+  alturaMin: 17
+  alturaMax: 33
   spawnXPosition: 512
   spawnZPosition: -0.3
 --- !u!1001 &1001108701
@@ -5147,7 +5179,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537843791}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.005689671, y: -0.002439523, z: -0.0000042766424, w: 0.9999809}
+  m_LocalRotation: {x: -0.005689671, y: -0.002439523, z: -0.0000042704305, w: 0.9999809}
   m_LocalPosition: {x: -2.7485352, y: -2.0570202, z: -3.2292557}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6882,7 +6914,7 @@ Transform:
   m_GameObject: {fileID: 2092056064}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.84, y: -7.77, z: 20.220745}
+  m_LocalPosition: {x: -13.84, y: -7.45, z: 20.220745}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
