@@ -75,6 +75,13 @@ public class SC_Vida : MonoBehaviour
         rb2d.velocity = Vector2.zero;
         rb2d.angularVelocity = 0f;
         rb2d.isKinematic = true; // Hace la nave inmovil
+
+        // Desactiva todos los colliders asociados a este GameObject
+        Collider2D[] colliders = GetComponents<Collider2D>();
+        foreach (Collider2D collider in colliders)
+        {
+            collider.enabled = false;
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
