@@ -377,7 +377,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 125}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &3365826067900277752
@@ -416,8 +416,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 800, y: -345}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: 800, y: -315}
+  m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2612222419924709600
 CanvasRenderer:
@@ -518,8 +518,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1478302711432811320, guid: f0dd443f48859334e92056073079b7eb, type: 3}
-          m_TargetAssemblyTypeName: SC_ControladorNave2D, Assembly-CSharp
+        - m_Target: {fileID: 4192346580365900092}
+          m_TargetAssemblyTypeName: SC_CambiadorDeNave, Assembly-CSharp
           m_MethodName: BtArribaPulsado
           m_Mode: 1
           m_Arguments:
@@ -530,9 +530,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1478302711432811320, guid: f0dd443f48859334e92056073079b7eb, type: 3}
-          m_TargetAssemblyTypeName: SC_ControladorNave2D, Assembly-CSharp
-          m_MethodName: Impulsado
+        - m_Target: {fileID: 4192346580365900092}
+          m_TargetAssemblyTypeName: SC_CambiadorDeNave, Assembly-CSharp
+          m_MethodName: BtArribaLiberado
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -545,59 +545,7 @@ MonoBehaviour:
   - eventID: 3
     callback:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1478302711432811320, guid: f0dd443f48859334e92056073079b7eb, type: 3}
-          m_TargetAssemblyTypeName: SC_ControladorNave2D, Assembly-CSharp
-          m_MethodName: Impulsado
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1478302711432811320, guid: f0dd443f48859334e92056073079b7eb, type: 3}
-          m_TargetAssemblyTypeName: SC_ControladorNave2D, Assembly-CSharp
-          m_MethodName: BtArribaPulsado
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 9
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1478302711432811320, guid: f0dd443f48859334e92056073079b7eb, type: 3}
-          m_TargetAssemblyTypeName: SC_ControladorNave2D, Assembly-CSharp
-          m_MethodName: Impulsado
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1478302711432811320, guid: f0dd443f48859334e92056073079b7eb, type: 3}
-          m_TargetAssemblyTypeName: SC_ControladorNave2D, Assembly-CSharp
-          m_MethodName: BtArribaPulsado
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
 --- !u!1 &3737573783161302550
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,8 +633,9 @@ GameObject:
   - component: {fileID: 6992469400032506753}
   - component: {fileID: 953965708205362146}
   - component: {fileID: 7865591001113551496}
+  - component: {fileID: 702280845488171689}
   m_Layer: 5
-  m_Name: BtGiroDerecha
+  m_Name: BtLateralDerecha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -708,8 +657,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -700, y: -400}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: -600, y: -400}
+  m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6992469400032506753
 CanvasRenderer:
@@ -793,6 +742,51 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &702280845488171689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4408326209183630300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4192346580365900092}
+          m_TargetAssemblyTypeName: SC_CambiadorDeNave, Assembly-CSharp
+          m_MethodName: botonLaterialDerechoPulsado
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4192346580365900092}
+          m_TargetAssemblyTypeName: SC_CambiadorDeNave, Assembly-CSharp
+          m_MethodName: botonLaterialDerechoLiberado
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &5078044480885365339
 GameObject:
   m_ObjectHideFlags: 0
@@ -805,6 +799,7 @@ GameObject:
   - component: {fileID: 1061876734215607309}
   - component: {fileID: 2938650945572341649}
   - component: {fileID: 5456381940256235313}
+  - component: {fileID: 2712643601236460266}
   m_Layer: 5
   m_Name: BtDerecha
   m_TagString: Untagged
@@ -828,8 +823,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 855, y: -400}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: 885, y: -400}
+  m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1061876734215607309
 CanvasRenderer:
@@ -913,6 +908,51 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2712643601236460266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5078044480885365339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4192346580365900092}
+          m_TargetAssemblyTypeName: SC_CambiadorDeNave, Assembly-CSharp
+          m_MethodName: BtDerechaPulsado
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4192346580365900092}
+          m_TargetAssemblyTypeName: SC_CambiadorDeNave, Assembly-CSharp
+          m_MethodName: BtDerechaLiberado
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &5253788941982163751
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,7 +1063,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 5, y: -113}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &5609070904618155487
@@ -1062,8 +1102,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 40, y: 190}
-  m_SizeDelta: {x: 40, y: 320}
+  m_AnchoredPosition: {x: 57, y: 190}
+  m_SizeDelta: {x: 45, y: 320}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2957881606845120989
 MonoBehaviour:
@@ -1128,8 +1168,9 @@ GameObject:
   - component: {fileID: 4046260450883229654}
   - component: {fileID: 3438352712851531456}
   - component: {fileID: 4575967068105858060}
+  - component: {fileID: 7619514362951003011}
   m_Layer: 5
-  m_Name: BtGiroIzquierda
+  m_Name: BtLateralIzquierda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1151,8 +1192,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -800, y: -400}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: -780, y: -400}
+  m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4046260450883229654
 CanvasRenderer:
@@ -1236,6 +1277,51 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7619514362951003011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6444099123606227816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4192346580365900092}
+          m_TargetAssemblyTypeName: SC_CambiadorDeNave, Assembly-CSharp
+          m_MethodName: botonLaterialIzquierdoPulsado
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4192346580365900092}
+          m_TargetAssemblyTypeName: SC_CambiadorDeNave, Assembly-CSharp
+          m_MethodName: botonLaterialIzquierdoLiberado
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &6491470784222293799
 GameObject:
   m_ObjectHideFlags: 0
@@ -1391,6 +1477,7 @@ MonoBehaviour:
   - {fileID: 516799264818270684, guid: f0dd443f48859334e92056073079b7eb, type: 3}
   - {fileID: 4843166968442570567, guid: dda046a8f8ffc2649acb743846ae16f2, type: 3}
   - {fileID: 4843166968442570567, guid: cf3ae644669eaf045b9f25d215bf5b53, type: 3}
+  botonLaterialDerecho: 0
 --- !u!1 &7538011122774781109
 GameObject:
   m_ObjectHideFlags: 0
@@ -1403,6 +1490,7 @@ GameObject:
   - component: {fileID: 7634108211134975991}
   - component: {fileID: 8885455504988278332}
   - component: {fileID: 372699823289112486}
+  - component: {fileID: 5781132023573115294}
   m_Layer: 5
   m_Name: BtAbajo
   m_TagString: Untagged
@@ -1426,8 +1514,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 800, y: -455}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: 800, y: -485}
+  m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7634108211134975991
 CanvasRenderer:
@@ -1511,6 +1599,51 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5781132023573115294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7538011122774781109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4192346580365900092}
+          m_TargetAssemblyTypeName: SC_CambiadorDeNave, Assembly-CSharp
+          m_MethodName: BtAbajoPulsado
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4192346580365900092}
+          m_TargetAssemblyTypeName: SC_CambiadorDeNave, Assembly-CSharp
+          m_MethodName: BtAbajoLiberado
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &7616923139254062071
 GameObject:
   m_ObjectHideFlags: 0
@@ -1523,6 +1656,7 @@ GameObject:
   - component: {fileID: 292262015249161988}
   - component: {fileID: 3646452246048852359}
   - component: {fileID: 8521966191075956458}
+  - component: {fileID: 2300138504255958347}
   m_Layer: 5
   m_Name: BtIzquierda
   m_TagString: Untagged
@@ -1546,8 +1680,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 745, y: -400}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: 715, y: -400}
+  m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &292262015249161988
 CanvasRenderer:
@@ -1631,6 +1765,51 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2300138504255958347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7616923139254062071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4192346580365900092}
+          m_TargetAssemblyTypeName: SC_CambiadorDeNave, Assembly-CSharp
+          m_MethodName: BtIzquierdaPulsado
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4192346580365900092}
+          m_TargetAssemblyTypeName: SC_CambiadorDeNave, Assembly-CSharp
+          m_MethodName: BtIzquierdaLiberado
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &9140723790691310448
 GameObject:
   m_ObjectHideFlags: 0

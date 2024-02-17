@@ -82,7 +82,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5807836988202730915, guid: dda046a8f8ffc2649acb743846ae16f2, type: 3}
       propertyPath: impulsado
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5807836988202730915, guid: dda046a8f8ffc2649acb743846ae16f2, type: 3}
       propertyPath: impulsoLateral
@@ -99,6 +99,10 @@ PrefabInstance:
     - target: {fileID: 5807836988202730915, guid: dda046a8f8ffc2649acb743846ae16f2, type: 3}
       propertyPath: rotacionVelocidad
       value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5807836988202730915, guid: dda046a8f8ffc2649acb743846ae16f2, type: 3}
+      propertyPath: botonArribaPulsado
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5807836988202730915, guid: dda046a8f8ffc2649acb743846ae16f2, type: 3}
       propertyPath: particulasMotorFrontal_L

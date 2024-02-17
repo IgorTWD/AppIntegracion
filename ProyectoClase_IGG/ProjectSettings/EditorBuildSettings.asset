@@ -11,16 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Escenas/1LunarLandScapeIGG.unity
     guid: f4021bc829b444148a3959ec85eeeceb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Escenas/2LunarLandScapeIGG.unity
     guid: a5e647585d12bc94382fbe8a3fb25f87
-  - enabled: 1
+  - enabled: 0
     path: Assets/Escenas/3LunarLandScapeIGG.unity
     guid: 20d18f8fc9162394fb7b6ea0a6f5b54b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Escenas/4NewLunar_Estacion.unity
     guid: ffccf64e977373148bf83c168ea2be02
-  - enabled: 1
+  - enabled: 0
     path: Assets/Escenas/5NewLuna_Cueva.unity
     guid: 9f0815e206e408f4ba2ef339c91a1b79
   m_configObjects: {}
