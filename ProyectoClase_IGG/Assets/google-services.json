@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "936278830191",
+    "project_id": "lunarlanderbauerigg",
+    "storage_bucket": "lunarlanderbauerigg.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936278830191:android:47528c59e8149d0e53719a",
+        "android_client_info": {
+          "package_name": "com.IgorGebauer.LunarLanderBauer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAczUYF1GrcEPk3lhLImFJz7pna9TN2Tak"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -12,7 +12,7 @@ public class SC_SpawnProyectil : MonoBehaviour
 
     private GameObject player;
     public float distanciaActivacion = 20f;
-    private bool estaActivo = false;
+    //private bool estaActivo = false;
 
     private void Start()
     {
