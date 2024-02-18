@@ -65,21 +65,26 @@
     <Compile Include="Assets\Actores\UI\SC_MenuInicial.cs" />
     <Compile Include="Assets\Z_Plugins\UnityTechnologies\ParticlePack\Shared\Scripts\AdjustTimeScale.cs" />
     <Compile Include="Assets\Z_Plugins\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCharacterMotor.cs" />
-    <Compile Include="Assets\FirebaseInit.cs" />
     <Compile Include="Assets\Actores\Asteroides\SC_SpawnAsteroide.cs" />
     <Compile Include="Assets\Z_Plugins\UnityTechnologies\ParticlePack\Shared\Scripts\ProximityActivate.cs" />
     <Compile Include="Assets\Actores\NAves\SC_ControladorNave2D.cs" />
     <Compile Include="Assets\Actores\SC_ActivadorDeColliderYParticulas.cs" />
     <Compile Include="Assets\Z_Plugins\UnityTechnologies\ParticlePack\Shared\Ramps\Runtime\RampAsset.cs" />
     <Compile Include="Assets\Actores\UI\SC_CambiadorDeNave.cs" />
+    <Compile Include="Assets\Actores\FireBase\PlayerBehaviour.cs" />
+    <Compile Include="Assets\Actores\FireBase\LoadSceneForPlayerSaveState.cs" />
     <Compile Include="Assets\Actores\Proyectil\SC_MovimientoProyectil.cs" />
     <Compile Include="Assets\Z_Plugins\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Z_Plugins\UnityTechnologies\ParticlePack\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Actores\FireBase\FirebaseInit.cs" />
+    <Compile Include="Assets\Actores\FireBase\PlayerSaveManager.cs" />
     <Compile Include="Assets\Actores\Camara\SC_CamaraFollow.cs" />
     <Compile Include="Assets\Z_Plugins\UnityTechnologies\ParticlePack\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
+    <Compile Include="Assets\Actores\FireBase\SyncPlayerToSave.cs" />
     <Compile Include="Assets\Actores\NAves\SC_Vida.cs" />
     <Compile Include="Assets\Actores\Asteroides\SC_MovimientoAsteroide.cs" />
     <Compile Include="Assets\Actores\NAves\SC_Combustible.cs" />
+    <Compile Include="Assets\Actores\FireBase\PlayerData.cs" />
     <Compile Include="Assets\Actores\Asteroides\SC_RotacionAsteroide.cs" />
     <Compile Include="Assets\Actores\Proyectil\SC_SpawnProyectil.cs" />
     <Compile Include="Assets\Actores\SC_MusicController.cs" />
@@ -89,6 +94,7 @@
     <None Include="Assets\Z_Plugins\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Firebase\Plugins\x86_64\FirebaseCppApp-11_7_0.dll" />
     <None Include="Assets\Firebase\Plugins\Firebase.Analytics.dll" />
+    <None Include="Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.dll" />
     <None Include="Assets\Z_Plugins\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Firebase\Plugins\iOS\Firebase.Analytics.dll" />
     <None Include="Assets\Firebase\Plugins\Firebase.App.dll" />
@@ -108,16 +114,19 @@
     <None Include="Assets\Z_Plugins\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\Z_Plugins\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\Z_Plugins\UnityTechnologies\ParticlePack\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\Firebase\Plugins\Firebase.Database.dll" />
     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-analytics-unity\maven-metadata.xml" />
     <None Include="Assets\Z_Plugins\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml" />
     <None Include="Assets\Z_Plugins\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Firebase\Plugins\iOS\Firebase.Auth.dll" />
     <None Include="Assets\Z_Plugins\UnityTechnologies\ParticlePack\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Firebase\Plugins\iOS\Firebase.Database.dll" />
     <None Include="Assets\Z_Plugins\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Z_Plugins\UnityTechnologies\ParticlePack\EffectExamples\Misc Effects\Shaders\FireFly.shader" />
     <None Include="Assets\Firebase\Plugins\Firebase.Platform.dll" />
     <None Include="Assets\Z_Plugins\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\maven-metadata.xml" />
     <None Include="Assets\Z_Plugins\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\Firebase\Plugins\Google.MiniJson.dll" />
     <None Include="Assets\Z_Plugins\UnityTechnologies\ParticlePack\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
@@ -464,6 +473,14 @@
       <HintPath>Assets\Firebase\Plugins\Firebase.TaskExtension.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Firebase.Auth">
+      <HintPath>Assets\Firebase\Plugins\Firebase.Auth.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Firebase.Database">
+      <HintPath>Assets\Firebase\Plugins\Firebase.Database.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.1\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
       <Private>False</Private>
@@ -474,10 +491,6 @@
     </Reference>
     <Reference Include="Google.MiniJson">
       <HintPath>Assets\Firebase\Plugins\Google.MiniJson.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Firebase.Auth">
-      <HintPath>Assets\Firebase\Plugins\Firebase.Auth.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
