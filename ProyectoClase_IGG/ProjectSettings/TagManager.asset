@@ -7,6 +7,7 @@ TagManager:
   - Muerte
   - NON
   - Limites
+  - HUD
   layers:
   - Default
   - TransparentFX
