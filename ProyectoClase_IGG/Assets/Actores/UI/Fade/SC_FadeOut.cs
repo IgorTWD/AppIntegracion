@@ -26,6 +26,8 @@ public class SC_FadeOut : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+
         puntos.enabled = false;
         textoPuntos.enabled = false;
         textoVictoria.enabled = false;
@@ -49,9 +51,12 @@ public class SC_FadeOut : MonoBehaviour
     public void Fade()
     {
         //Time.timeScale = 0;
+
         scVida = GameObject.FindGameObjectWithTag("Player").GetComponent<SC_Vida>();
         scPuntuacion = GameObject.FindGameObjectWithTag("HUD").GetComponent<SC_Puntuacion>();
+
         puntos.text = scPuntuacion.puntuacion.ToString();
+
         if (scVida.win)
         {
             
@@ -98,6 +103,23 @@ public class SC_FadeOut : MonoBehaviour
         puntos.enabled = true;
         textoPuntos.enabled = true;
         textoVictoria.enabled = true;
+
+    }
+
+    private void FadeOutPausa()
+    {
+        animator.Play("FadeOutPause");
+        textoVictoria.text = "Pause";
+
+
+        btContinuarPause.SetActive(true);
+        btReintentar.SetActive(true);
+
+
+        puntos.enabled = true;
+        textoPuntos.enabled = true;
+        textoVictoria.enabled = true;
+
     }
 
     private void FadeOutLose()
@@ -116,16 +138,13 @@ public class SC_FadeOut : MonoBehaviour
 
     public void AbreMenuPausa()
     {
+        scPuntuacion = GameObject.FindGameObjectWithTag("HUD").GetComponent<SC_Puntuacion>();
+        puntos.text = scPuntuacion.puntuacion.ToString();
 
-        btContinuarPause.SetActive(true);
-        btReintentar.SetActive(true);
+        FadeOutPausa();
 
-        animator.Play("FadeOutWin");
-        textoVictoria.text = "Pause";
+        Time.timeScale = 0f;
 
-        puntos.enabled = true;
-        textoPuntos.enabled = true;
-        textoVictoria.enabled = true;
     }
     public void CierraMenuPausa()
     {
@@ -134,6 +153,8 @@ public class SC_FadeOut : MonoBehaviour
         puntos.enabled = false;
         textoPuntos.enabled = false;
         textoVictoria.enabled = false;
+
+        Time.timeScale = 1.0f;
     }
 
 }
