@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro; // Para trabajar con TextMeshPro
-using UnityEngine.UI; // Para trabajar con UI como Sliders e Imágenes
+using TMPro; 
+using UnityEngine.UI; 
 
 public class MenuInicial : MonoBehaviour
 {
@@ -17,10 +17,12 @@ public class MenuInicial : MonoBehaviour
     private Image fillConsumo; // Color de relleno del slider de consumo
     private Image fillVelocidad; // Color de relleno del slider de velocidad
 
-    private int tipoCombustible; // Almacena la selección actual del tipo de combustible
+    private int tipoCombustible; // Almacena la seleccion actual del tipo de combustible
 
     void Start()
     {
+        
+
         // Busca y asigna los componentes necesarios en la UI
         DpNave = GameObject.Find("DpNave").GetComponent<TMP_Dropdown>();
         DpCombustible = GameObject.Find("DpCombustible").GetComponent<TMP_Dropdown>();
@@ -148,5 +150,6 @@ public class MenuInicial : MonoBehaviour
         #endif
     }
 
+  
 }
 
