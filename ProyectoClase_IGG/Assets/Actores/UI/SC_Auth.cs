@@ -9,9 +9,13 @@ public class SC_Auth : MonoBehaviour
 {
     private FirebaseAuth auth;
 
-    public TMP_InputField inputEmail;
-    public TMP_InputField inputPassword;
+    public TMP_InputField inputEmailRegistro;
+    public TMP_InputField inputPasswordRegistro;
+    public TMP_InputField inputEmailLogin;
+    public TMP_InputField inputPasswordLogin;
     public TMP_InputField inputVerificaContraseña;
+
+    public TMP_Text outputText;
 
     public GameObject canvasLogin;
     public GameObject canvasRegistro;
@@ -27,6 +31,7 @@ public class SC_Auth : MonoBehaviour
 
     public void RegistrarUsuario(string email, string password)
     {
+        
         auth.CreateUserWithEmailAndPasswordAsync(email, password).ContinueWithOnMainThread(task =>
         {
             if (task.IsCanceled)
@@ -43,7 +48,7 @@ public class SC_Auth : MonoBehaviour
             
             if (task.IsCompletedSuccessfully)
             {
-                // El usuario de Firebase ha sido creado exitosamente.
+                // El usuario ha sido creado exitosamente.
                 Firebase.Auth.AuthResult result = task.Result;
                 Debug.LogFormat("Usuario de Firebase creado exitosamente.");
 
@@ -56,36 +61,44 @@ public class SC_Auth : MonoBehaviour
 
     public void IniciarSesion(string email, string password)
     {
+        outputText.text = email + password ;
+        Debug.Log("Email: " + email);
+        Debug.Log(" Pass: " + password);
+        
         auth.SignInWithEmailAndPasswordAsync(email, password).ContinueWithOnMainThread(task =>
         {
+            Firebase.FirebaseException firebaseEX = task.Exception.GetBaseException() as Firebase.FirebaseException;
+            outputText.text = "Principio: " + firebaseEX.Message;
             if (task.IsCanceled)
             {
-                Debug.LogError("IniciarSesionUsuario fue cancelado.");
+                Debug.LogError("IniciarSesionUsuario cancelado.");
                 return;
             }
             if (task.IsFaulted)
             {
-                Debug.LogError("IniciarSesionUsuario encontró un error: " + task.Exception);
+                outputText.text ="Faulted: " +  firebaseEX.Message;
+                Debug.LogError("IniciarSesionUsuario encontro error: " + task.Exception);
                 return;
+               
             }
 
             if(task.IsCompletedSuccessfully)
             {
                 Firebase.Auth.AuthResult result = task.Result;
-                Debug.LogFormat("Usuario ha iniciado sesión exitosamente. ");
+                Debug.LogFormat("Usuario ha iniciado sesion exitosamente. ");
 
                 canvasLogin.SetActive(false);
                 canvasRegistro.SetActive(false);
                 canvasPrincipal.SetActive(true);
             }
-            
+            outputText.text = "Fin: " + firebaseEX.Message;
         });
     }
 
     public void RegistrarUsuario()
     {
-        string email = inputEmail.text;
-        string password = inputPassword.text;
+        string email = inputEmailRegistro.text;
+        string password = inputPasswordRegistro.text;
         string verifica = inputVerificaContraseña.text;
 
         if (password.Length < 6)
@@ -107,9 +120,9 @@ public class SC_Auth : MonoBehaviour
 
     public void IniciarSesion()
     {
-        string email = inputEmail.text;
-        string password = inputPassword.text;
+        string email = inputEmailLogin.text;
+        string password = inputPasswordLogin.text;
         IniciarSesion(email, password);
-        Debug.Log("Pass: " + password);
+        Debug.Log("Pass en metodo IniciarSesion y email: " + password + ",   " + email);
     }
 }
