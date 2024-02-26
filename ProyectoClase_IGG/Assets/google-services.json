@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "936278830191",
+	"firebase_url": "https://lunarlanderbauerigg-default-rtdb.europe-west1.firebasedatabase.app",
     "project_id": "lunarlanderbauerigg",
     "storage_bucket": "lunarlanderbauerigg.appspot.com"
   },

@@ -12,12 +12,17 @@ public class SyncPlayerToSave : MonoBehaviour
         _playerSaveManager = FindObjectOfType<PlayerSaveManager>();
     }
 
-    
+    //private void Start()
+    //{
+    //    _playerSaveManager.OnPlayerUpdated.AddListener(HandlePlayerSaveUpdated);
+    //    _player.OnPlayerUpdated.AddListener(HandlePlayerSaveUpdated);
+    //    _player.UpdatePlayer.(_playerSaveManager.LastPlayerData);
+    //}
 
     private IEnumerator Start()
     {
         var playerDataTask = _playerSaveManager.LoadPlayer();
-        yield return new WaitUntil(()=> playerDataTask.IsCompleted);
+        yield return new WaitUntil(() => playerDataTask.IsCompleted);
         var playerData = playerDataTask.Result;
         if (playerData.HasValue)
         {
@@ -31,5 +36,9 @@ public class SyncPlayerToSave : MonoBehaviour
         _playerSaveManager.SavePlayer(_player.PlayerData);
     }
 
+    private void HandlePlayerSaveUpdated(PlayerData playerData)
+    {
+        _player.UpdatePlayer(playerData);
+    }
    
 }
