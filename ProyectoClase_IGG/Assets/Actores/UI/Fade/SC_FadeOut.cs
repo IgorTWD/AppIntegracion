@@ -15,6 +15,7 @@ public class SC_FadeOut : MonoBehaviour
     public TMP_Text textoVictoria;
 
     public GameObject btContinuar;
+    public GameObject btContinuarPause;
     public GameObject btReintentar;
 
     private SC_Vida scVida;
@@ -112,5 +113,27 @@ public class SC_FadeOut : MonoBehaviour
         textoPuntos.enabled = true;
         textoVictoria.enabled = true;
     }
-    
+
+    public void AbreMenuPausa()
+    {
+
+        btContinuarPause.SetActive(true);
+        btReintentar.SetActive(true);
+
+        animator.Play("FadeOutWin");
+        textoVictoria.text = "Pause";
+
+        puntos.enabled = true;
+        textoPuntos.enabled = true;
+        textoVictoria.enabled = true;
+    }
+    public void CierraMenuPausa()
+    {
+        btContinuarPause.SetActive(false);
+        btReintentar.SetActive(false);
+        puntos.enabled = false;
+        textoPuntos.enabled = false;
+        textoVictoria.enabled = false;
+    }
+
 }
