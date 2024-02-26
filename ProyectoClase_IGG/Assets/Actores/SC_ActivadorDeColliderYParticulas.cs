@@ -1,41 +1,74 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
 
 public class SC_ActivadorDeColliderYParticulas : MonoBehaviour
 {
-    [SerializeField] private Collider2D colliderEspecifico; // 
-    [SerializeField] private ParticleSystem sistemaDeParticulas; // 
-    [SerializeField] private ParticleSystem sistemaDeParticulas2; //
+    [SerializeField] private BoxCollider2D colliderEspecifico;
+    [SerializeField] private ParticleSystem sistemaDeParticulas;
+    [SerializeField] private ParticleSystem sistemaDeParticulas2;
+    public float tiempoApagado;
+    public float tiempoEncendido;
+    public float retardoActivacionCollider; 
+
+    private Vector2 posicionOriginal; // La original
+    public Vector2 posicionInicial;  // Desde donde se mueve, hasta la original
 
     private void Start()
     {
-        // Inicia la coroutine para alternar el estado del collider y las partículas
+        // Almacena la posicion original del collider
+        posicionOriginal = colliderEspecifico.offset;
+
         StartCoroutine(AlternarEstado());
     }
 
     private IEnumerator AlternarEstado()
     {
-        // Bucle infinito
         while (true)
         {
-            // Espera 5 segundos
-            yield return new WaitForSeconds(5f);
-
-            // Alternar el estado del collider
-            colliderEspecifico.enabled = !colliderEspecifico.enabled;
-
-            // Alternar el estado de las partículas (reproducir si están detenidas, detener si están reproduciéndose)
-            if (sistemaDeParticulas.isPlaying)
+            // Activa las particulas
+            sistemaDeParticulas.Play();
+            if (sistemaDeParticulas2 != null)
             {
-                sistemaDeParticulas.Stop();
-                sistemaDeParticulas2.Stop();
-            }
-            else
-            {
-                sistemaDeParticulas.Play();
                 sistemaDeParticulas2.Play();
             }
+
+            //yield return new WaitForSeconds(retardoActivacionCollider);
+
+            // Mueve el collider progresivamente a su posicion original
+            StartCoroutine(MoverColliderPosicionOriginal());
+
+            // Espera un tiempo para el estado "encendido"
+            yield return new WaitForSeconds(tiempoEncendido);
+
+            // Desactiva el collider y detiene las particulas
+            colliderEspecifico.enabled = false;
+            sistemaDeParticulas.Stop();
+            if (sistemaDeParticulas2 != null)
+            {
+                sistemaDeParticulas2.Stop();
+            }
+
+            // Espera un tiempo para el estado "apagado"
+            yield return new WaitForSeconds(tiempoApagado);
         }
     }
+
+    private IEnumerator MoverColliderPosicionOriginal()
+    {
+        colliderEspecifico.enabled = true;
+        float tiempo = 0;
+        while (tiempo < retardoActivacionCollider)
+        {
+            // Interpola la posicion del collider
+            colliderEspecifico.offset = Vector2.Lerp(posicionInicial, posicionOriginal, tiempo / retardoActivacionCollider);
+            tiempo += Time.deltaTime;
+            yield return null;
+        }
+
+        // Asegura que el collider este exactamente en su posicion original al finalizar
+        colliderEspecifico.offset = posicionOriginal;
+        colliderEspecifico.enabled = true;
+    }
 }
+
