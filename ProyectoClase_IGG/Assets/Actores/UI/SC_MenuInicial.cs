@@ -19,6 +19,13 @@ public class MenuInicial : MonoBehaviour
 
     private int tipoCombustible; // Almacena la seleccion actual del tipo de combustible
 
+    private GameObject menuPrincipalPC;
+    private GameObject menuRegistroPC;
+    private GameObject menuLoginPC;
+    private GameObject menuPrincipalA;
+    private GameObject menuRegistroA;
+    private GameObject menuLoginA;
+
     void Start()
     {
         
@@ -41,6 +48,31 @@ public class MenuInicial : MonoBehaviour
         // Actualiza la UI inicialmente
         CambiarImagenNave();
         ActualizarTipoCombustible();
+
+
+        menuPrincipalA = GameObject.Find("MenuPrincipalA");
+        menuRegistroA = GameObject.Find("MenuRegistroA");
+        menuLoginA = GameObject.Find("MenuLoginA");
+        menuPrincipalPC = GameObject.Find("MenuPrincipalPC");
+        menuRegistroPC = GameObject.Find("MenuRegistroPC");
+        menuLoginPC = GameObject.Find("MenuLoginPC");
+
+    #if UNITY_STANDALONE || UNITY_EDITOR
+        menuPrincipalA.SetActive(false);
+        menuRegistroA.SetActive(false);
+        menuLoginA.SetActive(false);
+        menuRegistroPC.SetActive(true);
+        menuLoginPC.SetActive(true);
+        menuPrincipalPC.SetActive(true);
+    #else
+        menuPrincipalA.SetActive(true);
+        menuRegistroA.SetActive(true);
+        menuLoginA.SetActive(true);
+        menuRegistroPC.SetActive(false);
+        menuLoginPC.SetActive(false);
+        menuPrincipalPC.SetActive(false);
+    #endif
+
     }
 
     // Configura los sliders encontrando los componentes necesarios y asignando los valores iniciales
